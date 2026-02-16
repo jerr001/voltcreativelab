@@ -1,3 +1,23 @@
+@keyframes slide-up-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up-fade {
+  animation: slide-up-fade 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.animate-cta-pop {
+  animation:
+    pulse-btn 1.2s infinite,
+    scale-in 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
 @keyframes orbit-line {
   0% {
     transform: rotate(0deg) scale(1);

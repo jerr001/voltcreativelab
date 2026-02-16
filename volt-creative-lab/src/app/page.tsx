@@ -58,7 +58,7 @@ export default function Home() {
         <div className="relative z-10 flex flex-col sm:flex-row gap-4 justify-center mb-12 mt-4 animate-hero-fadein delay-300">
           <a
             href="#contact"
-            className="btn-primary animate-pulse-btn focus-visible:ring-2 focus-visible:ring-[#a259ff]"
+            className="btn-primary animate-cta-pop focus-visible:ring-2 focus-visible:ring-[#a259ff]"
           >
             Get a Quote
           </a>
@@ -158,7 +158,7 @@ export default function Home() {
           </span>
           <a
             href="#contact"
-            className="btn-primary mt-4 px-8 py-3 text-lg rounded-lg shadow-lg"
+            className="btn-primary mt-4 px-8 py-3 text-lg rounded-lg shadow-lg animate-cta-pop"
           >
             Contact Us
           </a>

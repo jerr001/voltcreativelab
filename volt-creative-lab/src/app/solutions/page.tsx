@@ -6,7 +6,7 @@ export default function Solutions() {
           Our Sub-Brands
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade">
             <h2 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Volt Studio
             </h2>
@@ -15,7 +15,7 @@ export default function Solutions() {
               for clients.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-150">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade delay-150">
             <h2 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Volt Academy
             </h2>
@@ -24,7 +24,7 @@ export default function Solutions() {
               programs.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-300">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade delay-300">
             <h2 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Volt Publish
             </h2>

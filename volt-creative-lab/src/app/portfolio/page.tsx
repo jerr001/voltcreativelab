@@ -9,7 +9,7 @@ export default function Portfolio() {
           A showcase of some of our recent projects and success stories.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               Brand Identity for Ministry
             </h2>
@@ -18,7 +18,7 @@ export default function Portfolio() {
               ministry.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-100">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade delay-100">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               E-commerce Website
             </h2>
@@ -27,7 +27,7 @@ export default function Portfolio() {
               analytics.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-200">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade delay-200">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               Author Book Launch
             </h2>
@@ -36,7 +36,7 @@ export default function Portfolio() {
               sales.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-300">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade delay-300">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               Social Media Campaign
             </h2>
@@ -45,7 +45,7 @@ export default function Portfolio() {
               campaigns.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-400">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade delay-400">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               Web Development Training
             </h2>
@@ -54,7 +54,7 @@ export default function Portfolio() {
               programs.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-500">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein animate-slide-up-fade delay-500">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               Book Publishing Support
             </h2>

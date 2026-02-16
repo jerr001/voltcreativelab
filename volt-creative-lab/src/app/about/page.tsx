@@ -8,7 +8,7 @@ export default function About() {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Vision Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein animate-slide-up-fade transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               Our Vision
             </h2>
@@ -19,7 +19,7 @@ export default function About() {
             </p>
           </div>
           {/* Mission Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein delay-150 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein animate-slide-up-fade delay-150 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               Our Mission
             </h2>
@@ -30,7 +30,7 @@ export default function About() {
             </p>
           </div>
           {/* Values Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein delay-300 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein animate-slide-up-fade delay-300 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
             <h2 className="text-xl font-bold mb-2 text-[#a259ff]">
               Core Values
             </h2>
@@ -55,7 +55,7 @@ export default function About() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* What We Do Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white animate-hero-fadein transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white animate-hero-fadein animate-slide-up-fade transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
             <h2 className="text-xl font-bold mb-4 text-[#a259ff]">
               What We Do
             </h2>
@@ -70,7 +70,7 @@ export default function About() {
             </ul>
           </div>
           {/* Sub-Brands Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white animate-hero-fadein delay-150 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white animate-hero-fadein animate-slide-up-fade delay-150 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl">
             <h2 className="text-xl font-bold mb-4 text-[#a259ff]">
               Our Sub-Brands
             </h2>
