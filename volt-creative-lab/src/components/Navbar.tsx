@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 // No 'use client' here, just export the component logic
 // All client logic will be in the wrapper
-export const Navbar = ({ open, setOpen, pathname }) => {
+type NavbarProps = {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  pathname: string;
+};
+
+export const Navbar = ({ open, setOpen, pathname }: NavbarProps) => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
