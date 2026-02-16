@@ -20,7 +20,7 @@ export const Navbar = ({ open, setOpen, pathname }: NavbarProps) => {
     { href: "/contact", label: "Contact" },
   ];
   return (
-    <nav className="w-full flex items-center justify-between px-2 sm:px-4 md:px-8 py-1 bg-[#f5f3ff] shadow-lg min-h-[40px] relative z-30">
+    <nav className="w-full flex items-center justify-between px-2 sm:px-4 md:px-8 py-1 bg-[#f5f3ff] shadow-lg min-h-[40px] sticky top-0 z-40">
       {/* Logo */}
       <Link href="/" className="flex items-center select-none">
         <Image
