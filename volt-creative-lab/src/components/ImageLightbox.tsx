@@ -78,13 +78,12 @@ export default function ImageLightbox({ images, alt }: ImageLightboxProps) {
             </button>
 
             {/* Image Container */}
-            <div className="relative w-full h-full flex items-center justify-center bg-black/50 rounded-lg overflow-hidden">
+            <div className="relative w-full h-[70vh] flex items-center justify-center bg-black/50 rounded-lg overflow-hidden">
               <Image
                 src={selectedImage}
                 alt="Full size portfolio image"
-                width={1000}
-                height={800}
-                className="object-contain w-full h-full"
+                fill
+                className="object-contain"
                 priority
               />
             </div>
