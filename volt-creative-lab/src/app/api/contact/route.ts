@@ -1,0 +1,94 @@
+import { NextRequest, NextResponse } from "next/server";
+
+const COMPANY_EMAIL = "voltcreativelab@gmail.com";
+
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const { name, email, phone, message } = body;
+
+    // Validate inputs
+    if (!name || !email || !message) {
+      return NextResponse.json(
+        { error: "Missing required fields: name, email, message" },
+        { status: 400 },
+      );
+    }
+
+    // Send email using built-in nodemailer or alternative
+    // For now, we'll use a simple approach with SendGrid or similar
+    // Since we're using Gmail, we'll use Nodemailer
+
+    const nodemailer = require("nodemailer");
+
+    // Create transporter using Gmail
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS,
+      },
+    });
+
+    // Email HTML template
+    const emailHTML = `
+      <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #a259ff;">New Contact Form Submission</h2>
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+        
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+        
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+        
+        <p><strong>Message:</strong></p>
+        <p style="background-color: #f5f5f5; padding: 15px; border-left: 4px solid #a259ff; white-space: pre-wrap;">${message}</p>
+        
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+        <p style="font-size: 12px; color: #999;">This email was sent from your website's contact form. Reply directly to ${email} to respond.</p>
+      </div>
+    `;
+
+    // Send email to company
+    await transporter.sendMail({
+      from: process.env.GMAIL_USER,
+      to: COMPANY_EMAIL,
+      replyTo: email,
+      subject: `New Contact Form Submission from ${name}`,
+      html: emailHTML,
+    });
+
+    // Send confirmation email to user
+    const confirmationHTML = `
+      <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #a259ff;">Thank You for Contacting Volt Creative Lab!</h2>
+        <p>Hi ${name},</p>
+        <p>We've received your message and will get back to you as soon as possible.</p>
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+        <p><strong>Your Message Summary:</strong></p>
+        <p>${message}</p>
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+        <p>Best regards,<br><strong>Volt Creative Lab Team</strong></p>
+      </div>
+    `;
+
+    await transporter.sendMail({
+      from: process.env.GMAIL_USER,
+      to: email,
+      subject: "We Received Your Message - Volt Creative Lab",
+      html: confirmationHTML,
+    });
+
+    return NextResponse.json(
+      { message: "Email sent successfully!" },
+      { status: 200 },
+    );
+  } catch (error) {
+    console.error("Email error:", error);
+    return NextResponse.json(
+      { error: "Failed to send email. Please try again later." },
+      { status: 500 },
+    );
+  }
+}
