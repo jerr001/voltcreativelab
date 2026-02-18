@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 const COMPANY_EMAIL = "voltcreativelab@gmail.com";
 
@@ -15,12 +16,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Send email using built-in nodemailer or alternative
-    // For now, we'll use a simple approach with SendGrid or similar
-    // Since we're using Gmail, we'll use Nodemailer
-
-    const nodemailer = require("nodemailer");
-
+    // Send email using nodemailer
     // Create transporter using Gmail
     const transporter = nodemailer.createTransport({
       service: "gmail",
