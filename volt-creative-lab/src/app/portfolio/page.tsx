@@ -42,6 +42,35 @@ export default function Portfolio() {
     "/portfolio/book-cover/slaininthespirit.png",
   ];
 
+  // Web Development Projects
+  const webProjects = [
+    {
+      title: "AARONice Prime Global",
+      image: "/portfolio/web-development/aaronice-prime-global.png",
+      url: "https://aaronice.org",
+    },
+    {
+      title: "Author Website",
+      image: "/portfolio/web-development/author-website.png",
+      url: "https://www.authorco-gids.com",
+    },
+    {
+      title: "Flexmart Product Page",
+      image: "/portfolio/web-development/flexmart-product-page.png",
+      url: "https://flexmart-three.vercel.app/",
+    },
+    {
+      title: "Grace Point Church",
+      image: "/portfolio/web-development/grace-point-church.png",
+      url: "https://grace-point-church.vercel.app",
+    },
+    {
+      title: "Jeremiah Portfolio",
+      image: "/portfolio/web-development/jeremiah-portfolio.png",
+      url: "https://my-react-portfolio-virid.vercel.app/",
+    },
+  ];
+
   return (
     <main>
       <section className="max-w-6xl mx-auto py-20 px-4">
@@ -58,10 +87,57 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold mb-8 text-[#a259ff]">
             Web Development
           </h2>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white text-center py-16 animate-hero-fadein">
-            <p className="text-lg text-white/80">
-              More website projects coming soon...
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {webProjects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-[#232046] rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein"
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                }}
+              >
+                {/* Project Screenshot */}
+                <div
+                  className="relative w-full h-48 cursor-pointer group overflow-hidden bg-black/50"
+                  onClick={() => {
+                    // Open lightbox if needed
+                  }}
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:opacity-80 transition-opacity"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity text-sm font-semibold">
+                      View
+                    </span>
+                  </div>
+                </div>
+
+                {/* Project Info */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-4 text-[#a259ff]">
+                    {project.title}
+                  </h3>
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block btn-primary px-6 py-2 text-sm rounded-lg hover:bg-[#a259ff] transition-all duration-300"
+                    >
+                      View Live →
+                    </a>
+                  )}
+                  {!project.url && (
+                    <span className="inline-block px-6 py-2 text-sm text-white/50 cursor-not-allowed">
+                      Coming Soon
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
