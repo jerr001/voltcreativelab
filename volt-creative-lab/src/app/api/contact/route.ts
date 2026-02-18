@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 const COMPANY_EMAIL = "voltcreativelab@gmail.com";
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,16 +16,6 @@ export async function POST(request: NextRequest) {
         { status: 400 },
       );
     }
-
-    // Send email using nodemailer
-    // Create transporter using Gmail
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS,
-      },
-    });
 
     // Email HTML template
     const emailHTML = `
@@ -47,8 +38,8 @@ export async function POST(request: NextRequest) {
     `;
 
     // Send email to company
-    await transporter.sendMail({
-      from: process.env.GMAIL_USER,
+    await resend.emails.send({
+      from: "onboarding@resend.dev",
       to: COMPANY_EMAIL,
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
@@ -69,8 +60,8 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
-    await transporter.sendMail({
-      from: process.env.GMAIL_USER,
+    await resend.emails.send({
+      from: "onboarding@resend.dev",
       to: email,
       subject: "We Received Your Message - Volt Creative Lab",
       html: confirmationHTML,
