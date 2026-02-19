@@ -1,0 +1,22 @@
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.next
+Disallow: /node_modules
+
+# Sitemap
+Sitemap: https://voltcreativelab.com/sitemap.xml
+
+# Crawl delay settings
+Crawl-delay: 1
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
