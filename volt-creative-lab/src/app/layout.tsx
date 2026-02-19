@@ -134,8 +134,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/volt-logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/volt-logo.png" />
+        <link
+          rel="icon"
+          href="/volt-logo.png?v=2"
+          type="image/png"
+          sizes="any"
+        />
+        <link rel="shortcut icon" href="/volt-logo.png?v=2" type="image/png" />
+        <link rel="apple-touch-icon" href="/volt-logo.png?v=2" />
+        <meta name="theme-color" content="#b35a00" />
         <Script
           id="structured-data"
           type="application/ld+json"
