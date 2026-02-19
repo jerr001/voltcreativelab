@@ -32,13 +32,16 @@ export default function Contact() {
     setStatus({ type: null, message: "" });
 
     try {
-      const response = await fetch("https://formsubmit.co/voltcreativelab@gmail.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://formsubmit.co/voltcreativelab@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
         },
-        body: JSON.stringify(formData),
-      });
+      );
 
       if (response.ok) {
         setStatus({
