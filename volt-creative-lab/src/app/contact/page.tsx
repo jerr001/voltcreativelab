@@ -32,15 +32,13 @@ export default function Contact() {
     setStatus({ type: null, message: "" });
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formsubmit.co/voltcreativelab@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-
-      const data = await response.json();
 
       if (response.ok) {
         setStatus({
@@ -57,7 +55,7 @@ export default function Contact() {
       } else {
         setStatus({
           type: "error",
-          message: data.error || "Failed to send message. Please try again.",
+          message: "Failed to send message. Please try again.",
         });
       }
     } catch (error) {
