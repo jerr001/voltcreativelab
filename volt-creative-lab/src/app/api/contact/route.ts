@@ -2,10 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const COMPANY_EMAIL = "voltcreativelab@gmail.com";
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await request.json();
     const { name, email, phone, message } = body;
 
