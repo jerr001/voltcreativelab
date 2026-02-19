@@ -13,7 +13,7 @@ export const Navbar = ({ open, setOpen, pathname }: NavbarProps) => {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
-    { href: "/solutions", label: "Sub-brands" },
+    { href: "/solutions", label: "Sub-Brands" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/academy", label: "Academy" },
     { href: "/publish", label: "Publishing" },
@@ -68,7 +68,7 @@ export const Navbar = ({ open, setOpen, pathname }: NavbarProps) => {
       </button>
       {/* Mobile Nav */}
       <div
-        className={`lg:hidden absolute top-full left-0 w-full bg-[#f5f3ff] shadow-lg transition-all duration-300 overflow-hidden ${open ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"}`}
+        className={`lg:hidden absolute top-full left-0 w-full bg-[#f5f3ff] shadow-lg transition-all duration-300 overflow-hidden ${open ? "max-h-screen py-4 opacity-100" : "max-h-0 py-0 opacity-0"}`}
         style={{ zIndex: 29 }}
       >
         <div className="flex flex-col gap-4 px-6 text-[#174c6b] font-medium">
