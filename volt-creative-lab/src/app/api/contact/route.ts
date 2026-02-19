@@ -5,6 +5,9 @@ const COMPANY_EMAIL = "voltcreativelab@gmail.com";
 
 export async function POST(request: NextRequest) {
   try {
+    console.log("Contact API called");
+    console.log("RESEND_API_KEY exists:", !!process.env.RESEND_API_KEY);
+
     const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await request.json();
     const { name, email, phone, message } = body;
@@ -38,13 +41,15 @@ export async function POST(request: NextRequest) {
     `;
 
     // Send email to company
-    await resend.emails.send({
+    console.log("Sending email to company:", COMPANY_EMAIL);
+    const companyEmailResponse = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: COMPANY_EMAIL,
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
       html: emailHTML,
     });
+    console.log("Company email response:", companyEmailResponse);
 
     // Send confirmation email to user
     const confirmationHTML = `
@@ -60,12 +65,14 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
-    await resend.emails.send({
+    console.log("Sending confirmation email to user:", email);
+    const userEmailResponse = await resend.emails.send({
       from: "onboarding@resend.dev",
       to: email,
       subject: "We Received Your Message - Volt Creative Lab",
       html: confirmationHTML,
     });
+    console.log("User email response:", userEmailResponse);
 
     return NextResponse.json(
       { message: "Email sent successfully!" },

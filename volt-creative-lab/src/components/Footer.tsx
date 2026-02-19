@@ -50,49 +50,34 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        {/* Socials */}
-        <div className="flex flex-col items-center lg:items-end gap-3 mt-6 lg:mt-0">
-          <span className="uppercase text-[#a259ff] text-xs font-bold mb-1">
-            Connect
-          </span>
-          <div className="flex gap-4">
+        {/* Socials & Contact */}
+        <div className="flex flex-col items-center lg:items-end gap-4 mt-6 lg:mt-0">
+          <div className="flex flex-col items-center lg:items-end gap-2">
+            <span className="uppercase text-[#a259ff] text-xs font-bold mb-1">
+              Contact
+            </span>
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Facebook"
-              className="hover:text-[#a259ff] transition"
+              href="mailto:voltcreativelab@gmail.com"
+              className="hover:text-[#a259ff] transition text-sm"
             >
-              <svg
-                width="22"
-                height="22"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.406.595 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0" />
-              </svg>
+              voltcreativelab@gmail.com
             </a>
             <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Twitter"
-              className="hover:text-[#a259ff] transition"
+              href="tel:08143529665"
+              className="hover:text-[#a259ff] transition text-sm"
             >
-              <svg
-                width="22"
-                height="22"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.916 4.916 0 0 0-8.38 4.482C7.691 8.095 4.066 6.13 1.64 3.161c-.542.929-.856 2.01-.857 3.17 0 2.188 1.115 4.117 2.823 5.247a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.209c9.058 0 14.009-7.496 14.009-13.986 0-.213-.005-.425-.014-.636A9.936 9.936 0 0 0 24 4.557z" />
-              </svg>
+              08143529665
             </a>
+          </div>
+          <div className="flex flex-col items-center lg:items-end gap-3 mt-2">
+            <span className="uppercase text-[#a259ff] text-xs font-bold">
+              Follow
+            </span>
             <a
-              href="https://instagram.com"
+              href="https://x.com/volt_create"
               target="_blank"
-              rel="noopener"
-              aria-label="Instagram"
+              rel="noopener noreferrer"
+              aria-label="X (Twitter)"
               className="hover:text-[#a259ff] transition"
             >
               <svg
@@ -101,7 +86,7 @@ export default function Footer() {
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.497 5.782 2.225 7.148 2.163 8.414 2.105 8.794 2.094 12 2.094m0-2.163C8.741-.069 8.332-.058 7.052.002 5.782.062 4.515.334 3.54 1.308 2.566 2.282 2.294 3.549 2.232 4.815c-.06 1.28-.071 1.689-.071 5.185s.011 3.905.071 5.185c.062 1.266.334 2.533 1.308 3.508.975.974 2.242 1.246 3.512 1.308 1.28.06 1.689.071 5.185.071s3.905-.011 5.185-.071c1.266-.062 2.533-.334 3.508-1.308.974-.975 1.246-2.242 1.308-3.508.06-1.28.071-1.689.071-5.185s-.011-3.905-.071-5.185c-.062-1.266-.334-2.533-1.308-3.508-.975-.974-2.242-1.246-3.508-1.308C15.267-.058 14.858-.069 12-.069zm0 5.838a6.163 6.163 0 1 0 0 12.326 6.163 6.163 0 0 0 0-12.326zm0 10.163a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.514l-5.106-6.693-5.853 6.693h-3.308l7.73-8.835L.424 2.25h6.679l4.632 6.126L17.863 2.25h.381zm-1.97 19.5h1.828L5.556 3.966H3.607l12.667 17.784z" />
               </svg>
             </a>
           </div>
