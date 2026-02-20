@@ -81,13 +81,7 @@ export const metadata: Metadata = {
     images: ["https://voltcreativelab.com/volt-logo.png"],
   },
   icons: {
-    icon: [
-      {
-        url: "/volt-logo.png",
-        sizes: "any",
-        type: "image/png",
-      },
-    ],
+    icon: "/favicon.svg",
     apple: "/volt-logo.png",
   },
   robots: {
@@ -134,14 +128,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="icon"
-          href="/volt-logo.png?v=2"
-          type="image/png"
-          sizes="any"
-        />
-        <link rel="shortcut icon" href="/volt-logo.png?v=2" type="image/png" />
-        <link rel="apple-touch-icon" href="/volt-logo.png?v=2" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/volt-logo.png" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/volt-logo.png" />
         <meta name="theme-color" content="#b35a00" />
         <Script
           id="structured-data"
