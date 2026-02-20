@@ -45,12 +45,12 @@ export default function Portfolio() {
   // Web Development Projects
   const webProjects = [
     {
-      title: "AARONice Prime Global",
+      title: "Aaronice Prime Global Company Limited",
       image: "/portfolio/web-development/aaronice-prime-global.png",
       url: "https://aaronice.org",
     },
     {
-      title: "Author Website",
+      title: "Author's Website",
       image: "/portfolio/web-development/author-website.png",
       url: "https://www.authorco-gids.com",
     },
@@ -65,7 +65,7 @@ export default function Portfolio() {
       url: "https://grace-point-church.vercel.app",
     },
     {
-      title: "Jeremiah Portfolio",
+      title: "Fullstack Developer's Portfolio",
       image: "/portfolio/web-development/jeremiah-portfolio.png",
       url: "https://my-react-portfolio-virid.vercel.app/",
     },
