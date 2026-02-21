@@ -7,7 +7,7 @@ export default function Academy() {
     name: "",
     email: "",
     phone: "",
-    paymentOption: "full",
+    paymentOption: "",
     message: "",
   });
   const [submitStatus, setSubmitStatus] = useState<string | null>(null);
@@ -50,7 +50,7 @@ export default function Academy() {
           name: "",
           email: "",
           phone: "",
-          paymentOption: "full",
+          paymentOption: "",
           message: "",
         });
         setTimeout(() => setSubmitStatus(null), 5000);
@@ -92,7 +92,7 @@ export default function Academy() {
               <ul className="space-y-2 text-white/90">
                 <li>Duration: 3 Months</li>
                 <li>Format: Intensive Hands-on Training</li>
-                <li>Focus: Full-Stack Web Development</li>
+                <li>Focus: Frontend Web Development</li>
                 <li>Industry-Relevant Projects</li>
               </ul>
             </div>
@@ -130,13 +130,10 @@ export default function Academy() {
             <ul className="space-y-2 text-white/90 text-sm md:text-base">
               <li>Industry-recognized certification upon completion</li>
               <li>
-                Top-performing students retained as interns in Volt Creative
-                Lab
+                Top-performing students retained as interns in Volt Creative Lab
               </li>
               <li>Mentorship from experienced web developers</li>
-              <li>
-                Portfolio-building projects with real-world applications
-              </li>
+              <li>Portfolio-building projects with real-world applications</li>
               <li>Career guidance and placement support</li>
             </ul>
           </div>
@@ -229,13 +226,15 @@ export default function Academy() {
                 className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all"
                 placeholder="+1 (555) 123-4567 or +234 8XX XXX XXXX"
               />
-              <p className="text-white/60 text-xs mt-1">International format: include country code (e.g., +1, +44, +234)</p>
+              <p className="text-white/60 text-xs mt-1">
+                International format: include country code (e.g., +1, +44, +234)
+              </p>
             </div>
 
             {/* Payment Option */}
             <div>
               <label className="block text-white font-semibold mb-3">
-                Payment Option <span className="text-[#b35a00]">*</span>
+                Payment Option (Optional)
               </label>
               <select
                 name="paymentOption"
@@ -243,6 +242,7 @@ export default function Academy() {
                 onChange={handleInputChange}
                 className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all"
               >
+                <option value="">Select a payment option</option>
                 <option value="full">Full Payment - ₦70,000 (Upfront)</option>
                 <option value="installment">
                   Installment - ₦35,000 (Upfront) + ₦35,000 (During Training)
@@ -265,6 +265,13 @@ export default function Academy() {
               />
             </div>
 
+            {/* Payment Note */}
+            <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
+              <p className="text-blue-200 text-sm">
+                After registration, payment details will be sent to your email.
+              </p>
+            </div>
+
             {/* Submit Button */}
             <button
               type="submit"
@@ -277,7 +284,8 @@ export default function Academy() {
             {/* Status Messages */}
             {submitStatus === "success" && (
               <div className="bg-green-500/20 border border-green-500 text-green-200 px-4 py-3 rounded-lg text-center">
-                Registration submitted successfully! We'll contact you soon with payment details.
+                Registration submitted successfully! We'll contact you soon with
+                payment details.
               </div>
             )}
             {submitStatus === "error" && (
@@ -290,7 +298,8 @@ export default function Academy() {
           <div className="bg-[#1a1530] rounded-xl p-6 mt-8 border border-[#b35a00]/30">
             <h3 className="text-white font-bold mb-3">Payment Processing</h3>
             <p className="text-white/80 text-sm mb-4">
-              After submitting your registration, you will receive an email with payment instructions. We accept payments via:
+              After submitting your registration, you will receive an email with
+              payment instructions. We accept payments via:
             </p>
             <ul className="text-white/80 text-sm space-y-1 mb-4">
               <li>Bank Transfer</li>
@@ -298,7 +307,8 @@ export default function Academy() {
               <li>Flutterwave (Nigerian & International)</li>
             </ul>
             <p className="text-white/70 text-xs">
-              For inquiries about payment methods or installment plans, contact us at{" "}
+              For inquiries about payment methods or installment plans, contact
+              us at{" "}
               <a
                 href="mailto:voltcreativelab@gmail.com"
                 className="text-[#b35a00] font-semibold hover:text-[#a259ff] transition-colors"
