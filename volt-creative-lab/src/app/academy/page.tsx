@@ -31,7 +31,7 @@ export default function Academy() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/voltcreativelab@gmail.com",
+        "https://formsubmit.co/voltcreativeacademy@gmail.com",
         {
           method: "POST",
           headers: {
