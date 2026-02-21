@@ -55,7 +55,7 @@ export default function Portfolio() {
       url: "https://www.authorco-gids.com",
     },
     {
-      title: "Portfolio Website",
+      title: "Flexmart E-commerce Product Page",
       image: "/portfolio/web-development/flexmart-product-page.png",
       url: "https://flexmart-three.vercel.app/",
     },
