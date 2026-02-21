@@ -79,12 +79,9 @@ export default function Academy() {
 
         {/* Bootcamp Announcement */}
         <div className="mb-16 bg-gradient-to-r from-[#b35a00] to-[#a259ff] rounded-2xl shadow-lg p-8 md:p-12 text-white animate-hero-fadein">
-          <div className="flex items-center mb-4">
-            <span className="text-4xl mr-4">🎯</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold">
-              Web Development Training Bootcamp
-            </h2>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+            Web Development Training Bootcamp
+          </h2>
           <p className="text-xl font-semibold mb-6 text-white/95">
             Next Cohort Begins Monday, April 6th, 2026
           </p>
@@ -93,10 +90,10 @@ export default function Academy() {
             <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
               <h3 className="text-lg font-bold mb-3">Program Details</h3>
               <ul className="space-y-2 text-white/90">
-                <li>✓ Duration: 3 Months</li>
-                <li>✓ Format: Intensive Hands-on Training</li>
-                <li>✓ Focus: Full-Stack Web Development</li>
-                <li>✓ Industry-Relevant Projects</li>
+                <li>Duration: 3 Months</li>
+                <li>Format: Intensive Hands-on Training</li>
+                <li>Focus: Full-Stack Web Development</li>
+                <li>Industry-Relevant Projects</li>
               </ul>
             </div>
 
@@ -129,18 +126,18 @@ export default function Academy() {
           </div>
 
           <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border-l-4 border-white">
-            <h3 className="text-lg font-bold mb-3">🏆 Program Benefits</h3>
+            <h3 className="text-lg font-bold mb-3">Program Benefits</h3>
             <ul className="space-y-2 text-white/90 text-sm md:text-base">
-              <li>✓ Industry-recognized certification upon completion</li>
+              <li>Industry-recognized certification upon completion</li>
               <li>
-                ✓ Top-performing students retained as interns in Volt Creative
+                Top-performing students retained as interns in Volt Creative
                 Lab
               </li>
-              <li>✓ Mentorship from experienced web developers</li>
+              <li>Mentorship from experienced web developers</li>
               <li>
-                ✓ Portfolio-building projects with real-world applications
+                Portfolio-building projects with real-world applications
               </li>
-              <li>✓ Career guidance and placement support</li>
+              <li>Career guidance and placement support</li>
             </ul>
           </div>
         </div>
@@ -230,8 +227,9 @@ export default function Academy() {
                 onChange={handleInputChange}
                 required
                 className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all"
-                placeholder="+234 8XX XXX XXXX"
+                placeholder="+1 (555) 123-4567 or +234 8XX XXX XXXX"
               />
+              <p className="text-white/60 text-xs mt-1">International format: include country code (e.g., +1, +44, +234)</p>
             </div>
 
             {/* Payment Option */}
@@ -279,25 +277,36 @@ export default function Academy() {
             {/* Status Messages */}
             {submitStatus === "success" && (
               <div className="bg-green-500/20 border border-green-500 text-green-200 px-4 py-3 rounded-lg text-center">
-                ✓ Registration submitted successfully! We'll contact you soon.
+                Registration submitted successfully! We'll contact you soon with payment details.
               </div>
             )}
             {submitStatus === "error" && (
               <div className="bg-red-500/20 border border-red-500 text-red-200 px-4 py-3 rounded-lg text-center">
-                ✗ Error submitting form. Please try again.
+                Error submitting form. Please try again.
               </div>
             )}
           </form>
 
-          <p className="text-center text-white/70 text-sm mt-6">
-            Questions? Contact us at{" "}
-            <a
-              href="mailto:voltcreativelab@gmail.com"
-              className="text-[#b35a00] font-semibold hover:text-[#a259ff] transition-colors"
-            >
-              voltcreativelab@gmail.com
-            </a>
-          </p>
+          <div className="bg-[#1a1530] rounded-xl p-6 mt-8 border border-[#b35a00]/30">
+            <h3 className="text-white font-bold mb-3">Payment Processing</h3>
+            <p className="text-white/80 text-sm mb-4">
+              After submitting your registration, you will receive an email with payment instructions. We accept payments via:
+            </p>
+            <ul className="text-white/80 text-sm space-y-1 mb-4">
+              <li>Bank Transfer</li>
+              <li>Paystack (Nigerian & International)</li>
+              <li>Flutterwave (Nigerian & International)</li>
+            </ul>
+            <p className="text-white/70 text-xs">
+              For inquiries about payment methods or installment plans, contact us at{" "}
+              <a
+                href="mailto:voltcreativelab@gmail.com"
+                className="text-[#b35a00] font-semibold hover:text-[#a259ff] transition-colors"
+              >
+                voltcreativelab@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
       </section>
     </main>
