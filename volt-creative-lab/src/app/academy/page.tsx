@@ -310,10 +310,10 @@ export default function Academy() {
               For inquiries about payment methods or installment plans, contact
               us at{" "}
               <a
-                href="mailto:voltcreativelab@gmail.com"
+                href="mailto:voltcreativeacademy@gmail.com"
                 className="text-[#b35a00] font-semibold hover:text-[#a259ff] transition-colors"
               >
-                voltcreativelab@gmail.com
+                voltcreativeacademy@gmail.com
               </a>
             </p>
           </div>
