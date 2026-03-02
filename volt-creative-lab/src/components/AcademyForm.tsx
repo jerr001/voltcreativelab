@@ -73,7 +73,7 @@ export default function AcademyForm() {
         setSubmitStatus("error");
         setTimeout(() => setSubmitStatus(null), 5000);
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus("error");
       setTimeout(() => setSubmitStatus(null), 5000);
     } finally {
@@ -89,7 +89,7 @@ export default function AcademyForm() {
       {/* Success/Error Messages */}
       {submitStatus === "success" && (
         <div className="p-4 bg-green-900/30 border border-green-600 text-green-200 rounded-lg">
-          ✓ Registration submitted successfully! We'll contact you soon.
+          ✓ Registration submitted successfully! We&apos;ll contact you soon.
         </div>
       )}
       {submitStatus === "error" && (
@@ -188,7 +188,7 @@ export default function AcademyForm() {
           placeholder="e.g., DANIEL01 or REGINA01"
         />
         <p className="text-white/60 text-xs mt-1">
-          Enter your sales rep's referral code if you were referred by them
+          Enter your sales rep&apos;s referral code if you were referred by them
         </p>
       </div>
 
