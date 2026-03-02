@@ -1,13 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function Contact() {
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
+    referralCode: "",
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -15,6 +18,17 @@ export default function Contact() {
     type: "success" | "error" | null;
     message: string;
   }>({ type: null, message: "" });
+
+  // Auto-populate referral code from URL
+  useEffect(() => {
+    const refCode = searchParams.get("ref");
+    if (refCode) {
+      setFormData((prev) => ({
+        ...prev,
+        referralCode: refCode.toUpperCase(),
+      }));
+    }
+  }, [searchParams]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -54,6 +68,7 @@ export default function Contact() {
           email: "",
           phone: "",
           message: "",
+          referralCode: "",
         });
       } else {
         setStatus({
@@ -147,6 +162,24 @@ export default function Contact() {
               type="text"
               placeholder="Phone (optional)"
               value={formData.phone}
+              onChange={handleChange}
+              disabled={isLoading}
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label
+              htmlFor="referralCode"
+              className="text-sm font-semibold text-[#a259ff]"
+            >
+              Referral Code{" "}
+              <span className="text-[#888] font-normal">(optional)</span>
+            </label>
+            <input
+              id="referralCode"
+              className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition uppercase"
+              type="text"
+              placeholder="e.g., DANIEL01 or REGINA01"
+              value={formData.referralCode}
               onChange={handleChange}
               disabled={isLoading}
             />

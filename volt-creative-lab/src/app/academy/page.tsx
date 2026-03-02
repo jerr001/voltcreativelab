@@ -1,17 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function Academy() {
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     paymentOption: "",
     message: "",
+    referralCode: "",
   });
   const [submitStatus, setSubmitStatus] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+
+  // Auto-populate referral code from URL
+  useEffect(() => {
+    const refCode = searchParams.get("ref");
+    if (refCode) {
+      setFormData((prev) => ({
+        ...prev,
+        referralCode: refCode.toUpperCase(),
+      }));
+    }
+  }, [searchParams]);
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -52,6 +66,7 @@ export default function Academy() {
           phone: "",
           paymentOption: "",
           message: "",
+          referralCode: "",
         });
         setTimeout(() => setSubmitStatus(null), 5000);
       } else {
@@ -248,6 +263,26 @@ export default function Academy() {
                   Installment - ₦35,000 (Upfront) + ₦35,000 (During Training)
                 </option>
               </select>
+            </div>
+
+            {/* Referral Code */}
+            <div>
+              <label className="block text-white font-semibold mb-3">
+                Referral Code{" "}
+                <span className="text-white/60 font-normal">(optional)</span>
+              </label>
+              <input
+                type="text"
+                name="referralCode"
+                value={formData.referralCode}
+                onChange={handleInputChange}
+                className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all uppercase"
+                placeholder="e.g., DANIEL01 or REGINA01"
+              />
+              <p className="text-white/60 text-xs mt-1">
+                Enter your sales rep's referral code if you were referred by
+                them
+              </p>
             </div>
 
             {/* Message */}
