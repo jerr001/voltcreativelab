@@ -46,14 +46,18 @@ export default function ContactForm() {
     setStatus({ type: null, message: "" });
 
     try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phone", formData.phone);
+      formDataToSend.append("message", formData.message);
+      formDataToSend.append("referralCode", formData.referralCode);
+
       const response = await fetch(
         "https://formsubmit.co/voltcreativelab@gmail.com",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
+          body: formDataToSend,
         },
       );
 
