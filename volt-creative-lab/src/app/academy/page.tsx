@@ -1,86 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
+import AcademyForm from "@/components/AcademyForm";
 
 export default function Academy() {
-  const searchParams = useSearchParams();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    paymentOption: "",
-    message: "",
-    referralCode: "",
-  });
-  const [submitStatus, setSubmitStatus] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-
-  // Auto-populate referral code from URL
-  useEffect(() => {
-    const refCode = searchParams.get("ref");
-    if (refCode) {
-      setFormData((prev) => ({
-        ...prev,
-        referralCode: refCode.toUpperCase(),
-      }));
-    }
-  }, [searchParams]);
-
-  const handleInputChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >,
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsLoading(true);
-
-    try {
-      const response = await fetch(
-        "https://formsubmit.co/voltcreativeacademy@gmail.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...formData,
-            subject: "Web Development Bootcamp Registration",
-          }),
-        },
-      );
-
-      if (response.ok) {
-        setSubmitStatus("success");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          paymentOption: "",
-          message: "",
-          referralCode: "",
-        });
-        setTimeout(() => setSubmitStatus(null), 5000);
-      } else {
-        setSubmitStatus("error");
-        setTimeout(() => setSubmitStatus(null), 5000);
-      }
-    } catch (error) {
-      setSubmitStatus("error");
-      setTimeout(() => setSubmitStatus(null), 5000);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
     <main>
       <section className="max-w-6xl mx-auto py-20 px-4">
@@ -191,144 +114,13 @@ export default function Academy() {
             Register for the Bootcamp
           </h2>
 
-          <form
-            onSubmit={handleSubmit}
-            className="bg-[#232046] rounded-2xl shadow-lg p-8 space-y-6"
+          <Suspense
+            fallback={
+              <div className="text-white text-center">Loading form...</div>
+            }
           >
-            {/* Full Name */}
-            <div>
-              <label className="block text-white font-semibold mb-3">
-                Full Name <span className="text-[#b35a00]">*</span>
-              </label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all"
-                placeholder="Your full name"
-              />
-            </div>
-
-            {/* Email */}
-            <div>
-              <label className="block text-white font-semibold mb-3">
-                Email <span className="text-[#b35a00]">*</span>
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all"
-                placeholder="your@email.com"
-              />
-            </div>
-
-            {/* Phone */}
-            <div>
-              <label className="block text-white font-semibold mb-3">
-                Phone Number <span className="text-[#b35a00]">*</span>
-              </label>
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all"
-                placeholder="+1 (555) 123-4567 or +234 8XX XXX XXXX"
-              />
-              <p className="text-white/60 text-xs mt-1">
-                International format: include country code (e.g., +1, +44, +234)
-              </p>
-            </div>
-
-            {/* Payment Option */}
-            <div>
-              <label className="block text-white font-semibold mb-3">
-                Payment Option (Optional)
-              </label>
-              <select
-                name="paymentOption"
-                value={formData.paymentOption}
-                onChange={handleInputChange}
-                className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all"
-              >
-                <option value="">Select a payment option</option>
-                <option value="full">Full Payment - ₦70,000 (Upfront)</option>
-                <option value="installment">
-                  Installment - ₦35,000 (Upfront) + ₦35,000 (During Training)
-                </option>
-              </select>
-            </div>
-
-            {/* Referral Code */}
-            <div>
-              <label className="block text-white font-semibold mb-3">
-                Referral Code{" "}
-                <span className="text-white/60 font-normal">(optional)</span>
-              </label>
-              <input
-                type="text"
-                name="referralCode"
-                value={formData.referralCode}
-                onChange={handleInputChange}
-                className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all uppercase"
-                placeholder="e.g., DANIEL01 or REGINA01"
-              />
-              <p className="text-white/60 text-xs mt-1">
-                Enter your sales rep's referral code if you were referred by
-                them
-              </p>
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="block text-white font-semibold mb-3">
-                Additional Information
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                rows={5}
-                className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all resize-none"
-                placeholder="Tell us about your web development experience and what you hope to achieve..."
-              />
-            </div>
-
-            {/* Payment Note */}
-            <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
-              <p className="text-blue-200 text-sm">
-                After registration, payment details will be sent to your email.
-              </p>
-            </div>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              disabled={isLoading}
-              className="w-full bg-gradient-to-r from-[#b35a00] to-[#a259ff] hover:from-[#9d4900] hover:to-[#8f43ff] text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 ease-out transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isLoading ? "Submitting..." : "Register Now"}
-            </button>
-
-            {/* Status Messages */}
-            {submitStatus === "success" && (
-              <div className="bg-green-500/20 border border-green-500 text-green-200 px-4 py-3 rounded-lg text-center">
-                Registration submitted successfully! We'll contact you soon with
-                payment details.
-              </div>
-            )}
-            {submitStatus === "error" && (
-              <div className="bg-red-500/20 border border-red-500 text-red-200 px-4 py-3 rounded-lg text-center">
-                Error submitting form. Please try again.
-              </div>
-            )}
-          </form>
+            <AcademyForm />
+          </Suspense>
 
           <div className="bg-[#1a1530] rounded-xl p-6 mt-8 border border-[#b35a00]/30">
             <h3 className="text-white font-bold mb-3">Payment Processing</h3>
