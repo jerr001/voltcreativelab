@@ -184,7 +184,7 @@ export default function AcademyForm() {
           value={formData.referralCode}
           onChange={handleInputChange}
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all uppercase disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
           placeholder="Enter referral code"
         />
         <p className="text-white/60 text-xs mt-1">

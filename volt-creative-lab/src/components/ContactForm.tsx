@@ -169,7 +169,7 @@ export default function ContactForm() {
           </label>
           <input
             id="referralCode"
-            className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition uppercase"
+            className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition"
             type="text"
             placeholder="Enter referral code"
             value={formData.referralCode}
