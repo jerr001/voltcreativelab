@@ -171,7 +171,7 @@ export default function ContactForm() {
             id="referralCode"
             className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition uppercase"
             type="text"
-            placeholder="e.g., DANIEL01 or REGINA01"
+            placeholder="Enter referral code"
             value={formData.referralCode}
             onChange={handleChange}
             disabled={isLoading}
