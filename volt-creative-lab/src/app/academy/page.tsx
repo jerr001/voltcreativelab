@@ -21,7 +21,7 @@ export default function Academy() {
             Web Development Training Bootcamp
           </h2>
           <p className="text-xl font-semibold mb-6 text-white/95">
-            Next Cohort Begins Monday, April 6th, 2026
+            Next Cohort Begins Monday, April 13th, 2026
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -29,7 +29,7 @@ export default function Academy() {
               <h3 className="text-lg font-bold mb-3">Program Details</h3>
               <ul className="space-y-2 text-white/90">
                 <li>Duration: 3 Months</li>
-                <li>Format: Intensive Hands-on Training</li>
+                <li>Format: Online & Physical (Choose your preference)</li>
                 <li>Focus: Frontend Web Development</li>
                 <li>Industry-Relevant Projects</li>
               </ul>
@@ -37,7 +37,7 @@ export default function Academy() {
 
             <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
               <h3 className="text-lg font-bold mb-3">Investment</h3>
-              <p className="text-3xl font-extrabold mb-4">₦70,000</p>
+              <p className="text-3xl font-extrabold mb-4">₦80,000</p>
               <p className="text-white/90 text-sm">
                 Payment options available for flexibility
               </p>
@@ -47,12 +47,14 @@ export default function Academy() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
               <p className="font-semibold mb-2">Payment Option 1</p>
-              <p className="text-white/90 text-sm">Full upfront payment</p>
+              <p className="text-white/90 text-sm">
+                Full upfront payment - ₦80,000
+              </p>
             </div>
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
               <p className="font-semibold mb-2">Payment Option 2</p>
               <p className="text-white/90 text-sm">
-                50% upfront, 50% during training
+                50% upfront (₦40,000), 50% during training (₦40,000)
               </p>
             </div>
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import AcademyCarousel from "@/components/AcademyCarousel";
 
 export default function Home() {
   return (
@@ -63,6 +64,11 @@ export default function Home() {
             Get a Quote
           </a>
         </div>
+      </section>
+
+      {/* ACADEMY CAROUSEL SECTION */}
+      <section className="max-w-6xl mx-auto py-12 px-4">
+        <AcademyCarousel />
       </section>
 
       {/* ABOUT SECTION */}

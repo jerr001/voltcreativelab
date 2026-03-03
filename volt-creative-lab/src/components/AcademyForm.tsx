@@ -10,6 +10,7 @@ export default function AcademyForm() {
     email: "",
     phone: "",
     paymentOption: "",
+    trainingFormat: "",
     message: "",
     referralCode: "",
   });
@@ -49,6 +50,7 @@ export default function AcademyForm() {
       formDataToSend.append("email", formData.email);
       formDataToSend.append("phone", formData.phone);
       formDataToSend.append("paymentOption", formData.paymentOption);
+      formDataToSend.append("trainingFormat", formData.trainingFormat);
       formDataToSend.append("message", formData.message);
       formDataToSend.append("referralCode", formData.referralCode);
       formDataToSend.append("subject", "Web Development Bootcamp Registration");
@@ -68,6 +70,7 @@ export default function AcademyForm() {
           email: "",
           phone: "",
           paymentOption: "",
+          trainingFormat: "",
           message: "",
           referralCode: "",
         });
@@ -168,12 +171,31 @@ export default function AcademyForm() {
           className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
         >
           <option value="">Select a payment option</option>
-          <option value="full">Full Payment - ₦70,000 (Upfront)</option>
+          <option value="full">Full Payment - ₦80,000 (Upfront)</option>
           <option value="installment">
-            Installment - ₦35,000 (Upfront) + ₦35,000 (During Training)
+            Installment - ₦40,000 (Upfront) + ₦40,000 (During Training)
           </option>
         </select>
       </div>
+
+      {/* Training Format */}
+      <div>
+        <label className="block text-white font-semibold mb-3">
+          Training Format <span className="text-[#b35a00]">*</span>
+        </label>
+        <select
+          name="trainingFormat"
+          value={formData.trainingFormat}
+          onChange={handleInputChange}
+          required
+          disabled={isLoading}
+          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
+        >
+          <option value="">Select training format</option>
+          <option value="online">Online</option>
+          <option value="physical">Physical (In-person)</option>
+          <option value="hybrid">Hybrid (Both Online & Physical)</option>
+        </select>
 
       {/* Referral Code */}
       <div>
