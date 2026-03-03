@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
     // Send email to academy
     console.log("Sending academy registration email to:", ACADEMY_EMAIL);
     const companyEmailResponse = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "Volt Academy <onboarding@resend.dev>",
       to: ACADEMY_EMAIL,
       replyTo: email,
       subject: `New Bootcamp Registration from ${name}`,
@@ -97,7 +97,7 @@ export async function POST(request: NextRequest) {
 
     console.log("Sending confirmation email to user:", email);
     const userEmailResponse = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "Volt Academy <onboarding@resend.dev>",
       to: email,
       subject: "Your Bootcamp Registration - Volt Academy",
       html: confirmationHTML,

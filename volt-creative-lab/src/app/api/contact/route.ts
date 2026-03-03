@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
     // Send email to company
     console.log("Sending email to company:", COMPANY_EMAIL);
     const companyEmailResponse = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "Volt Creative Lab <onboarding@resend.dev>",
       to: COMPANY_EMAIL,
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
 
     console.log("Sending confirmation email to user:", email);
     const userEmailResponse = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "Volt Creative Lab <onboarding@resend.dev>",
       to: email,
       subject: "We Received Your Message - Volt Creative Lab",
       html: confirmationHTML,
