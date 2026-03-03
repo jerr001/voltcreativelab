@@ -196,6 +196,7 @@ export default function AcademyForm() {
           <option value="physical">Physical (In-person)</option>
           <option value="hybrid">Hybrid (Both Online & Physical)</option>
         </select>
+      </div>
 
       {/* Referral Code */}
       <div>
