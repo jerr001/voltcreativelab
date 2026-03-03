@@ -45,23 +45,13 @@ export default function AcademyForm() {
     setIsLoading(true);
 
     try {
-      const formDataToSend = new FormData();
-      formDataToSend.append("name", formData.name);
-      formDataToSend.append("email", formData.email);
-      formDataToSend.append("phone", formData.phone);
-      formDataToSend.append("paymentOption", formData.paymentOption);
-      formDataToSend.append("trainingFormat", formData.trainingFormat);
-      formDataToSend.append("message", formData.message);
-      formDataToSend.append("referralCode", formData.referralCode);
-      formDataToSend.append("subject", "Web Development Bootcamp Registration");
-
-      const response = await fetch(
-        "https://formsubmit.co/voltcreativeacademy@gmail.com",
-        {
-          method: "POST",
-          body: formDataToSend,
+      const response = await fetch("/api/academy", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         setSubmitStatus("success");
