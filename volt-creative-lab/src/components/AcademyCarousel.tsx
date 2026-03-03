@@ -55,7 +55,7 @@ export default function AcademyCarousel() {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 p-8 md:p-12 flex flex-col justify-center text-white transition-opacity duration-500 ${
+            className={`absolute inset-0 p-8 md:p-12 flex flex-col justify-center text-white transition-opacity duration-500 pointer-events-none ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -88,7 +88,7 @@ export default function AcademyCarousel() {
 
             <Link
               href="/academy"
-              className="inline-block w-fit bg-white text-[#b35a00] font-bold py-2 px-6 rounded-lg hover:bg-white/90 transition-colors"
+              className="inline-block w-fit bg-white text-[#b35a00] font-bold py-2 px-6 rounded-lg hover:bg-white/90 transition-colors pointer-events-auto"
             >
               Register Now
             </Link>
