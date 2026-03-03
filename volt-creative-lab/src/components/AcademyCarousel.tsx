@@ -51,20 +51,20 @@ export default function AcademyCarousel() {
   return (
     <div className="relative w-full mb-12 bg-gradient-to-r from-[#b35a00] to-[#a259ff] rounded-2xl overflow-hidden shadow-lg">
       {/* Carousel Container */}
-      <div className="relative h-64 md:h-80 overflow-hidden">
+      <div className="relative min-h-96 md:h-80 overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 p-8 md:p-12 flex flex-col justify-center text-white transition-opacity duration-500 pointer-events-none ${
+            className={`absolute inset-0 p-6 sm:p-8 md:p-12 flex flex-col justify-center text-white transition-opacity duration-500 pointer-events-none ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
-            <h3 className="text-2xl md:text-3xl font-extrabold mb-2">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold mb-2">
               {slide.title}
             </h3>
 
             {slide.startDate && (
-              <p className="text-lg md:text-xl font-semibold text-white/95 mb-3">
+              <p className="text-base sm:text-lg md:text-xl font-semibold text-white/95 mb-3">
                 Starts Monday, {slide.startDate}
               </p>
             )}
