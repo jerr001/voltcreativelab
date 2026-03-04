@@ -298,59 +298,71 @@ export default function Home() {
           A showcase of some of our recent projects and success stories.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
-            <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
-              Brand Identity for Ministry
-            </h3>
-            <p className="text-white/90">
-              Developed a cohesive brand and digital presence for a growing
-              ministry.
-            </p>
-          </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-100">
-            <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
-              E-commerce Website
-            </h3>
-            <p className="text-white/90">
-              Launched a custom online store with seamless checkout and
-              analytics.
-            </p>
-          </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-200">
-            <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
-              Author Book Launch
-            </h3>
-            <p className="text-white/90">
-              Guided an author from manuscript to published book and online
-              sales.
-            </p>
-          </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-300">
-            <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
-              Social Media Campaign
-            </h3>
-            <p className="text-white/90">
-              Increased engagement and reach for a business through creative
-              campaigns.
-            </p>
-          </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-400">
-            <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
-              Web Development Training
-            </h3>
-            <p className="text-white/90">
-              Mentored aspiring developers through Volt Academy's hands-on
-              programs.
-            </p>
-          </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-500">
-            <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
-              Book Publishing Support
-            </h3>
-            <p className="text-white/90">
-              Helped authors edit, publish, and promote their books online.
-            </p>
-          </div>
+          <Link href="/portfolio">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein cursor-pointer">
+              <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
+                Brand Identity for Ministry
+              </h3>
+              <p className="text-white/90">
+                Developed a cohesive brand and digital presence for a growing
+                ministry.
+              </p>
+            </div>
+          </Link>
+          <Link href="/portfolio">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-100 cursor-pointer">
+              <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
+                E-commerce Website
+              </h3>
+              <p className="text-white/90">
+                Launched a custom online store with seamless checkout and
+                analytics.
+              </p>
+            </div>
+          </Link>
+          <Link href="/portfolio">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-200 cursor-pointer">
+              <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
+                Author Book Launch
+              </h3>
+              <p className="text-white/90">
+                Guided an author from manuscript to published book and online
+                sales.
+              </p>
+            </div>
+          </Link>
+          <Link href="/portfolio">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-300 cursor-pointer">
+              <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
+                Social Media Campaign
+              </h3>
+              <p className="text-white/90">
+                Increased engagement and reach for a business through creative
+                campaigns.
+              </p>
+            </div>
+          </Link>
+          <Link href="/portfolio">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-400 cursor-pointer">
+              <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
+                Web Development Training
+              </h3>
+              <p className="text-white/90">
+                Mentored aspiring developers through Volt Academy's hands-on
+                programs.
+              </p>
+            </div>
+          </Link>
+          <Link href="/portfolio">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-500 cursor-pointer">
+              <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
+                Book Publishing Support
+              </h3>
+              <p className="text-white/90">
+                Helped authors edit, publish, and promote their books online.
+              </p>
+            </div>
+          </Link>
         </div>
       </section>
 
