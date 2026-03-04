@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await request.json();
-    const { name, email, phone, message } = body;
+    const { name, email, phone, message, referralCode } = body;
 
     // Validate inputs
     if (!name || !email || !message) {
@@ -29,6 +29,7 @@ export async function POST(request: NextRequest) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+        ${referralCode ? `<p><strong>Referral Code:</strong> ${referralCode}</p>` : ""}
         
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
         
