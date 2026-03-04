@@ -184,7 +184,6 @@ export default function AcademyForm() {
           <option value="">Select training format</option>
           <option value="online">Online</option>
           <option value="physical">Physical (In-person)</option>
-          <option value="hybrid">Hybrid (Both Online & Physical)</option>
         </select>
       </div>
 
