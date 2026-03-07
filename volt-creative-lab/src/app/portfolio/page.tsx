@@ -91,7 +91,7 @@ export default function Portfolio() {
             {webProjects.map((project, index) => (
               <div
                 key={index}
-                className="bg-[#232046] rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein"
+                className="bg-[#232046] rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein"
                 style={{
                   animationDelay: `${index * 100}ms`,
                 }}
@@ -125,7 +125,7 @@ export default function Portfolio() {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block btn-primary px-6 py-2 text-sm rounded-lg hover:bg-[#a259ff] transition-all duration-300"
+                      className="inline-block btn-primary px-6 py-2 text-sm rounded-lg hover:bg-[#a259ff] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1"
                     >
                       View Live →
                     </a>

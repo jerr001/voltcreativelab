@@ -88,7 +88,7 @@ export default function AcademyCarousel() {
 
             <Link
               href="/academy"
-              className="inline-block w-fit bg-white text-[#b35a00] font-bold py-2 px-6 rounded-lg hover:bg-white/90 transition-colors pointer-events-auto"
+              className="inline-block w-fit bg-white text-[#b35a00] font-bold py-2 px-6 rounded-lg hover:bg-white/90 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 pointer-events-auto"
             >
               Register Now
             </Link>
@@ -99,14 +99,14 @@ export default function AcademyCarousel() {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-colors z-10"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-110 z-10"
         aria-label="Previous slide"
       >
         ‹
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-colors z-10"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-110 z-10"
         aria-label="Next slide"
       >
         ›
@@ -118,7 +118,7 @@ export default function AcademyCarousel() {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`h-2 rounded-full transition-all ${
+            className={`h-2 rounded-full transition-all duration-300 hover:scale-125 ${
               index === currentSlide
                 ? "bg-white w-6"
                 : "bg-white/50 w-2 hover:bg-white/70"

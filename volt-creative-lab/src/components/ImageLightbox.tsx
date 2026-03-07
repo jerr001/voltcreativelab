@@ -71,7 +71,7 @@ export default function ImageLightbox({ images, alt }: ImageLightboxProps) {
             {/* Close Button */}
             <button
               onClick={closeLightbox}
-              className="absolute -top-10 right-0 text-white hover:text-[#b35a00] transition text-2xl font-bold"
+              className="absolute -top-10 right-0 text-white hover:text-[#b35a00] transition-all duration-300 text-2xl font-bold hover:scale-125"
               aria-label="Close lightbox"
             >
               ✕
@@ -93,14 +93,14 @@ export default function ImageLightbox({ images, alt }: ImageLightboxProps) {
               <>
                 <button
                   onClick={prevImage}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-[#b35a00] hover:bg-[#a259ff] text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 shadow-lg"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-[#b35a00] hover:bg-[#a259ff] text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110"
                   aria-label="Previous image"
                 >
                   ❮
                 </button>
                 <button
                   onClick={nextImage}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-[#b35a00] hover:bg-[#a259ff] text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 shadow-lg"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-[#b35a00] hover:bg-[#a259ff] text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110"
                   aria-label="Next image"
                 >
                   ❯

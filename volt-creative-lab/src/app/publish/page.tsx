@@ -9,7 +9,7 @@ export default function Publish() {
           Helping authors edit, publish, and promote their books, including
           building custom author websites and digital support for launches.
         </p>
-        <div className="mb-10 bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
+        <div className="mb-10 bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
           <h2 className="text-2xl font-bold mb-4 text-[#a259ff]">
             Our Publishing Services
           </h2>

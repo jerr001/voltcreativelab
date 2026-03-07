@@ -44,7 +44,7 @@ export const Navbar = ({ open, setOpen, pathname }: NavbarProps) => {
             <Link
               key={link.href}
               href={link.href}
-              className={`hover:text-[#b35a00] transition ${isActive ? "text-[#b35a00] font-bold" : ""}`}
+              className={`hover:text-[#b35a00] transition-all duration-300 hover:scale-105 ${isActive ? "text-[#b35a00] font-bold" : ""}`}
             >
               {link.label}
             </Link>

@@ -227,7 +227,7 @@ export default function AcademyForm() {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-gradient-to-r from-[#b35a00] to-[#a259ff] text-white font-bold py-3 rounded-lg hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-gradient-to-r from-[#b35a00] to-[#a259ff] text-white font-bold py-3 rounded-lg hover:shadow-lg hover:scale-105 hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isLoading ? "Submitting..." : "Register for Bootcamp"}
       </button>
