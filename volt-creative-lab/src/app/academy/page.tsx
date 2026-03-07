@@ -25,7 +25,7 @@ export default function Academy() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-2 animate-smooth-slide">
               <h3 className="text-lg font-bold mb-3">Program Details</h3>
               <ul className="space-y-2 text-white/90">
                 <li>Duration: 3 Months</li>
@@ -35,7 +35,7 @@ export default function Academy() {
               </ul>
             </div>
 
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-2 animate-smooth-slide delay-100">
               <h3 className="text-lg font-bold mb-3">Investment</h3>
               <p className="text-3xl font-extrabold mb-4">₦80,000</p>
               <p className="text-white/90 text-sm">
@@ -45,19 +45,19 @@ export default function Academy() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-            <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
+            <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-1 animate-smooth-scale delay-75">
               <p className="font-semibold mb-2">Payment Option 1</p>
               <p className="text-white/90 text-sm">
                 Full upfront payment - ₦80,000
               </p>
             </div>
-            <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
+            <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-1 animate-smooth-scale delay-100">
               <p className="font-semibold mb-2">Payment Option 2</p>
               <p className="text-white/90 text-sm">
                 50% upfront (₦40,000), 50% during training (₦40,000)
               </p>
             </div>
-            <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
+            <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-1 animate-smooth-scale delay-125">
               <p className="font-semibold mb-2">Certificate & Careers</p>
               <p className="text-white/90 text-sm">
                 Certificate awarded + Internship opportunities
@@ -65,7 +65,7 @@ export default function Academy() {
             </div>
           </div>
 
-          <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border-l-4 border-white">
+          <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm border-l-4 border-white transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-2 animate-smooth-slide delay-150">
             <h3 className="text-lg font-bold mb-3">Program Benefits</h3>
             <ul className="space-y-2 text-white/90 text-sm md:text-base">
               <li>Industry-recognized certification upon completion</li>
@@ -80,7 +80,7 @@ export default function Academy() {
         </div>
 
         {/* What We Offer */}
-        <div className="mb-16 bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
+        <div className="mb-16 bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
           <h2 className="text-2xl font-bold mb-4 text-[#a259ff]">
             What We Offer
           </h2>

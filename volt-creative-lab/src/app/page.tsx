@@ -178,7 +178,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {/* Branding & Visual Identity */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Branding & Visual Identity
             </h3>
@@ -188,7 +188,7 @@ export default function Home() {
             </p>
           </div>
           {/* Graphic Design */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-150">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-150">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Graphic Design
             </h3>
@@ -198,7 +198,7 @@ export default function Home() {
             </p>
           </div>
           {/* Website Design & Development */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-200">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-200">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Website Design & Development
             </h3>
@@ -207,7 +207,7 @@ export default function Home() {
             </p>
           </div>
           {/* Video Editing */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-300">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Video Editing
             </h3>
@@ -217,7 +217,7 @@ export default function Home() {
             </p>
           </div>
           {/* Social Media Management */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-400">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-400">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Social Media Management
             </h3>
@@ -227,7 +227,7 @@ export default function Home() {
             </p>
           </div>
           {/* Tech Education (Volt Academy) */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-500">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-500">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Tech Education (Volt Academy)
             </h3>
@@ -239,7 +239,7 @@ export default function Home() {
           </div>
           <div className="hidden xl:block"></div>
           {/* Publishing & Author Services (Volt Publish) */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-600">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-600">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Publishing & Author Services (Volt Publish)
             </h3>
@@ -268,7 +268,7 @@ export default function Home() {
               for clients.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-150">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-150">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Volt Academy
             </h3>
@@ -277,7 +277,7 @@ export default function Home() {
               programs.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-300">
+          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Volt Publish
             </h3>
@@ -299,7 +299,7 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein cursor-pointer">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Brand Identity for Ministry
               </h3>
@@ -310,7 +310,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-100 cursor-pointer">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-100 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 E-commerce Website
               </h3>
@@ -321,7 +321,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-200 cursor-pointer">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-200 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Author Book Launch
               </h3>
@@ -332,7 +332,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-300 cursor-pointer">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Social Media Campaign
               </h3>
@@ -343,7 +343,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-400 cursor-pointer">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-400 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Web Development Training
               </h3>
@@ -354,7 +354,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein delay-500 cursor-pointer">
+            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-500 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Book Publishing Support
               </h3>

@@ -57,13 +57,13 @@ export default function ChurchPage() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-[#a259ff] text-white font-bold rounded-lg hover:bg-[#8b47d9] transition-all duration-300 hover:shadow-lg text-center sm:text-base text-lg"
+              className="px-8 py-4 bg-[#a259ff] text-white font-bold rounded-lg hover:bg-[#8b47d9] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-center sm:text-base text-lg"
             >
               Request a Demo on WhatsApp
             </a>
             <Link
               href="/church#demo"
-              className="px-8 py-4 bg-white/10 border border-white text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300 text-center sm:text-base text-lg"
+              className="px-8 py-4 bg-white/10 border border-white text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-center sm:text-base text-lg"
             >
               View Demo Websites
             </Link>
@@ -79,7 +79,7 @@ export default function ChurchPage() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/40 transition-all">
+          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide">
             <h3 className="text-lg font-bold text-[#a259ff] mb-3">
               Visitors Can't Find You Online
             </h3>
@@ -90,7 +90,7 @@ export default function ChurchPage() {
             </p>
           </div>
 
-          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/40 transition-all">
+          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-75">
             <h3 className="text-lg font-bold text-[#a259ff] mb-3">
               Sermons Are Hard to Access
             </h3>
@@ -100,7 +100,7 @@ export default function ChurchPage() {
             </p>
           </div>
 
-          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/40 transition-all">
+          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-150">
             <h3 className="text-lg font-bold text-[#a259ff] mb-3">
               Events & Announcements Are Scattered
             </h3>
@@ -111,7 +111,7 @@ export default function ChurchPage() {
             </p>
           </div>
 
-          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/40 transition-all">
+          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-200">
             <h3 className="text-lg font-bold text-[#a259ff] mb-3">
               First-Time Visitors Have No Clear Path
             </h3>
@@ -122,7 +122,7 @@ export default function ChurchPage() {
             </p>
           </div>
 
-          <div className="md:col-span-2 bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/40 transition-all">
+          <div className="md:col-span-2 bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-250">
             <h3 className="text-lg font-bold text-[#a259ff] mb-3">
               Your Online Presence Doesn't Reflect Your Ministry's Excellence
             </h3>
@@ -182,7 +182,8 @@ export default function ChurchPage() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-[#1a1530] rounded-lg p-6 border border-white/10 hover:border-[#a259ff]/40 transition-all duration-300"
+              className="bg-[#1a1530] rounded-lg p-6 border border-white/10 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-scale"
+              style={{ animationDelay: `${idx * 50}ms` }}
             >
               <h3 className="text-lg font-bold text-[#a259ff] mb-2">
                 {item.title}
@@ -216,7 +217,8 @@ export default function ChurchPage() {
           ].map((demo, idx) => (
             <div
               key={idx}
-              className="bg-[#1a1530] rounded-lg overflow-hidden border border-white/10 hover:border-[#a259ff]/40 transition-all duration-300 group hover:shadow-lg"
+              className="bg-[#1a1530] rounded-lg overflow-hidden border border-white/10 hover:border-[#a259ff]/50 transition-all duration-300 group hover:shadow-lg hover:-translate-y-3 hover:scale-105 animate-smooth-slide"
+              style={{ animationDelay: `${idx * 100}ms` }}
             >
               {demo.image && (
                 <div className="w-full h-48 bg-gradient-to-br from-[#2d2a4a] to-[#1a1530] flex items-center justify-center border-b border-white/10 overflow-hidden">
@@ -225,7 +227,7 @@ export default function ChurchPage() {
                     alt={demo.name}
                     width={400}
                     height={192}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
               )}
@@ -245,7 +247,7 @@ export default function ChurchPage() {
                   href={demo.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-[#a259ff] text-white font-semibold rounded-lg hover:bg-[#8b47d9] transition-all duration-300"
+                  className="inline-block px-6 py-3 bg-[#a259ff] text-white font-semibold rounded-lg hover:bg-[#8b47d9] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1"
                 >
                   View Website
                 </a>
@@ -288,9 +290,13 @@ export default function ChurchPage() {
               desc: "We're here to serve your vision. We listen to understand your unique culture, values, and goals.",
             },
           ].map((item, idx) => (
-            <div key={idx} className="flex gap-4">
+            <div
+              key={idx}
+              className="flex gap-4 animate-smooth-slide"
+              style={{ animationDelay: `${idx * 100}ms` }}
+            >
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#a259ff]/20">
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#a259ff]/20 transition-all duration-300 hover:bg-[#a259ff]/40 hover:scale-110">
                   <svg
                     className="h-6 w-6 text-[#a259ff]"
                     fill="none"
@@ -345,8 +351,11 @@ export default function ChurchPage() {
             },
           ].map((step, idx) => (
             <div key={idx} className="relative">
-              <div className="relative z-10 bg-[#1a1530] rounded-lg p-8 text-center border border-white/10">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#a259ff] text-white font-bold text-2xl mx-auto mb-4">
+              <div
+                className="relative z-10 bg-[#1a1530] rounded-lg p-8 text-center border border-white/10 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-3 hover:scale-105 animate-smooth-slide"
+                style={{ animationDelay: `${idx * 150}ms` }}
+              >
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#a259ff] text-white font-bold text-2xl mx-auto mb-4 hover:shadow-lg hover:scale-110 transition-all duration-300">
                   {step.num}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">
@@ -361,7 +370,7 @@ export default function ChurchPage() {
 
       {/* OFFER SECTION */}
       <section className="max-w-4xl mx-auto py-20 px-4">
-        <div className="bg-[#1a1530] rounded-lg p-8 md:p-12 border border-[#a259ff]/30">
+        <div className="bg-[#1a1530] rounded-lg p-8 md:p-12 border border-[#a259ff]/30 hover:border-[#a259ff]/60 transition-all duration-300 hover:shadow-lg hover:-translate-y-3 animate-smooth-slide">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 text-center">
             Currently Onboarding a Few Churches
           </h2>
@@ -389,18 +398,18 @@ export default function ChurchPage() {
             it easier for people to connect.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-hero-fadein delay-450">
             <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-4 bg-[#a259ff] text-white font-bold rounded-lg hover:bg-[#8b47d9] transition-all duration-300 hover:shadow-lg text-lg sm:text-base text-center"
+              className="px-10 py-4 bg-[#a259ff] text-white font-bold rounded-lg hover:bg-[#8b47d9] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-lg sm:text-base text-center"
             >
               Chat on WhatsApp
             </a>
             <Link
               href="/contact"
-              className="px-10 py-4 bg-white/10 border border-white text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300 text-lg sm:text-base text-center"
+              className="px-10 py-4 bg-white/10 border border-white text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-lg sm:text-base text-center"
             >
               Request a Demo
             </Link>
