@@ -16,6 +16,7 @@ export const Navbar = ({ open, setOpen, pathname }: NavbarProps) => {
     { href: "/solutions", label: "Sub-Brands" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/academy", label: "Academy" },
+    { href: "/church", label: "Church" },
     { href: "/publish", label: "Publishing" },
     { href: "/contact", label: "Contact" },
   ];
