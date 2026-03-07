@@ -352,8 +352,8 @@ export default function ChurchPage() {
             give your church the support it needs for a successful launch.
           </p>
           <p className="text-center text-white/60 mt-6 italic">
-            Ready to strengthen your church's digital presence? Let's talk about
-            what's right for your ministry.
+            Ready to strengthen your church&apos;s digital presence? Let&apos;s
+            talk about what&apos;s right for your ministry.
           </p>
         </div>
       </section>
