@@ -36,7 +36,7 @@ export default function ChurchPage() {
 
         <div className="relative z-10 max-w-3xl">
           <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6 text-white animate-hero-fadein">
-            Launch Your Church's Digital Presence in{" "}
+            Launch Your Church&apos;s Digital Presence in{" "}
             <span className="text-[#a259ff]">7 Days</span>
           </h1>
           <p className="text-lg xs:text-xl sm:text-2xl text-white/80 mb-8 animate-hero-fadein delay-150">
@@ -46,7 +46,8 @@ export default function ChurchPage() {
           </p>
 
           <p className="text-base sm:text-lg text-white/70 mb-10 italic animate-hero-fadein delay-300">
-            "Built with ministry understanding and a focus on excellence."
+            &ldquo;Built with ministry understanding and a focus on
+            excellence.&rdquo;
           </p>
 
           {/* CTA Buttons */}
@@ -79,12 +80,12 @@ export default function ChurchPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/40 transition-all">
             <h3 className="text-lg font-bold text-[#a259ff] mb-3">
-              Visitors Can't Find You Online
+              Visitors Can&apos;t Find You Online
             </h3>
             <p className="text-white/80">
-              People searching for your church on Google or social media don't
-              find a professional, welcoming presence. You're missing
-              opportunities to connect with your community.
+              People searching for your church on Google or social media
+              don&apos;t find a professional, welcoming presence. You&apos;re
+              missing opportunities to connect with your community.
             </p>
           </div>
 
@@ -104,8 +105,8 @@ export default function ChurchPage() {
             </h3>
             <p className="text-white/80">
               Information lives on Facebook, WhatsApp, and bulletin boards.
-              Members miss important updates, and newcomers don't know what's
-              happening.
+              Members miss important updates, and newcomers don&apos;t know
+              what&apos;s happening.
             </p>
           </div>
 
@@ -114,19 +115,20 @@ export default function ChurchPage() {
               First-Time Visitors Have No Clear Path
             </h3>
             <p className="text-white/80">
-              New people don't know how to stay connected after their first
-              visit. You're losing potential members because the connection
-              isn't easy.
+              New people don&apos;t know how to stay connected after their first
+              visit. You&apos;re losing potential members because the connection
+              isn&apos;t easy.
             </p>
           </div>
 
           <div className="md:col-span-2 bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/40 transition-all">
             <h3 className="text-lg font-bold text-[#a259ff] mb-3">
-              Your Online Presence Doesn't Reflect Your Ministry's Excellence
+              Your Online Presence Doesn&apos;t Reflect Your Ministry&apos;s
+              Excellence
             </h3>
             <p className="text-white/80">
               You invest in wonderful teaching, worship, and community care—but
-              your online presentation doesn't communicate that excellence.
+              your online presentation doesn&apos;t communicate that excellence.
               Visitors form first impressions from what they see online.
             </p>
           </div>
@@ -136,7 +138,7 @@ export default function ChurchPage() {
       {/* SOLUTION SECTION */}
       <section className="max-w-5xl mx-auto py-20 px-4">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-white text-center">
-          What's Included
+          What&apos;s Included
         </h2>
         <p className="text-center text-white/70 mb-16 text-lg">
           Everything structured to be simple, clear, and useful for real
@@ -253,7 +255,7 @@ export default function ChurchPage() {
           {[
             {
               title: "We Understand Ministry Context",
-              desc: "We're not just designers—we understand how churches work, what pastors need, and how to build systems that actually serve your community.",
+              desc: "We&apos;re not just designers—we understand how churches work, what pastors need, and how to build systems that actually serve your community.",
             },
             {
               title: "Focus on Clean, Excellent Design",
@@ -265,15 +267,15 @@ export default function ChurchPage() {
             },
             {
               title: "Focused on Real Results",
-              desc: "We care about helping your church reach people, connect visitors, and strengthen your community. That's what success looks like.",
+              desc: "We care about helping your church reach people, connect visitors, and strengthen your community. That&apos;s what success looks like.",
             },
             {
               title: "Practical Setup, Not Over-Engineering",
-              desc: "You get what you need—no bloated systems or expensive features you'll never use. Pure functionality for ministry.",
+              desc: "You get what you need—no bloated systems or expensive features you&apos;ll never use. Pure functionality for ministry.",
             },
             {
               title: "Partnership Mindset",
-              desc: "We're here to serve your vision. We listen to understand your unique culture, values, and goals.",
+              desc: "We&apos;re here to serve your vision. We listen to understand your unique culture, values, and goals.",
             },
           ].map((item, idx) => (
             <div key={idx} className="flex gap-4">
@@ -319,17 +321,17 @@ export default function ChurchPage() {
             {
               num: "1",
               title: "Consultation",
-              desc: "We listen to understand your church's vision, values, and goals. We learn about your community and ministry.",
+              desc: "We listen to understand your church&apos;s vision, values, and goals. We learn about your community and ministry.",
             },
             {
               num: "2",
               title: "Setup & Customization",
-              desc: "We build your website with your church's branding, content, and customization. You'll be part of the process.",
+              desc: "We build your website with your church&apos;s branding, content, and customization. You&apos;ll be part of the process.",
             },
             {
               num: "3",
               title: "Launch & Guidance",
-              desc: "We launch your site and walk your team through managing it. You'll have a simple system that's easy to maintain.",
+              desc: "We launch your site and walk your team through managing it. You&apos;ll have a simple system that&apos;s easy to maintain.",
             },
           ].map((step, idx) => (
             <div key={idx} className="relative">
@@ -355,13 +357,13 @@ export default function ChurchPage() {
           </h2>
           <p className="text-lg text-white/80 text-center leading-relaxed">
             We take on a limited number of churches to ensure each one gets the
-            personalized attention and quality it deserves. We're carefully
+            personalized attention and quality it deserves. We&apos;re carefully
             scheduling onboarding to maintain the high standard of our work and
             give your church the support it needs for a successful launch.
           </p>
           <p className="text-center text-white/60 mt-6 italic">
-            Ready to strengthen your church's digital presence? Let's talk about
-            what's right for your ministry.
+            Ready to strengthen your church&apos;s digital presence? Let&apos;s
+            talk about what&apos;s right for your ministry.
           </p>
         </div>
       </section>
@@ -370,11 +372,11 @@ export default function ChurchPage() {
       <section className="max-w-4xl mx-auto py-20 px-4">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
-            Ready to Strengthen Your Church's Digital Presence?
+            Ready to Strengthen Your Church&apos;s Digital Presence?
           </h2>
           <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Let's help your ministry present itself excellently online and make
-            it easier for people to connect.
+            Let&apos;s help your ministry present itself excellently online and
+            make it easier for people to connect.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
