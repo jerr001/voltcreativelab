@@ -216,28 +216,18 @@ export default function ChurchPage() {
               key={idx}
               className="bg-[#1a1530] rounded-lg overflow-hidden border border-white/10 hover:border-[#a259ff]/40 transition-all duration-300 group hover:shadow-lg"
             >
-              {/* Placeholder image */}
-              <div className="w-full h-48 bg-gradient-to-br from-[#2d2a4a] to-[#1a1530] flex items-center justify-center border-b border-white/10">
-                <div className="text-center">
-                  <p className="text-white/50 text-sm mb-2">
-                    Demo Website Preview
-                  </p>
-                  <p className="text-[#a259ff] font-semibold">Coming Soon</p>
-                </div>
-              </div>
-
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">
                   {demo.name}
                 </h3>
-                <p className="text-white/70 mb-4">{demo.desc}</p>
+                <p className="text-white/70 mb-6">{demo.desc}</p>
                 <a
                   href={demo.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-2 bg-[#a259ff] text-white font-semibold rounded-lg hover:bg-[#8b47d9] transition-all duration-300"
+                  className="inline-block px-6 py-3 bg-[#a259ff] text-white font-semibold rounded-lg hover:bg-[#8b47d9] transition-all duration-300"
                 >
-                  View Demo
+                  View Website
                 </a>
               </div>
             </div>
@@ -255,7 +245,7 @@ export default function ChurchPage() {
           {[
             {
               title: "We Understand Ministry Context",
-              desc: "We&apos;re not just designers—we understand how churches work, what pastors need, and how to build systems that actually serve your community.",
+              desc: "We're not just designers - we understand how churches work, what pastors need, and how to build systems that actually serve your community.",
             },
             {
               title: "Focus on Clean, Excellent Design",
@@ -271,7 +261,7 @@ export default function ChurchPage() {
             },
             {
               title: "Practical Setup, Not Over-Engineering",
-              desc: "You get what you need—no bloated systems or expensive features you&apos;ll never use. Pure functionality for ministry.",
+              desc: "You get what you need - no bloated systems or expensive features you'll never use. Pure functionality for ministry.",
             },
             {
               title: "Partnership Mindset",
@@ -362,8 +352,8 @@ export default function ChurchPage() {
             give your church the support it needs for a successful launch.
           </p>
           <p className="text-center text-white/60 mt-6 italic">
-            Ready to strengthen your church&apos;s digital presence? Let&apos;s
-            talk about what&apos;s right for your ministry.
+            Ready to strengthen your church's digital presence? Let's talk about
+            what's right for your ministry.
           </p>
         </div>
       </section>
