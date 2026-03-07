@@ -202,9 +202,9 @@ export default function ChurchPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
             {
-              name: "Kingdom Life Church",
-              desc: "Modern welcoming design with clear sermon access and visitor connection",
-              demo: "https://demo-kingdom-life.example.com",
+              name: "Grace Point Church",
+              desc: "Professional church website with modern design, sermon archive, events, and visitor connection",
+              demo: "https://grace-point-church.vercel.app",
             },
             {
               name: "Revival Assembly",
