@@ -211,8 +211,8 @@ export default function ChurchPage() {
             {
               name: "Revival Assembly",
               desc: "Community-focused design highlighting events, giving, and member engagement",
-              demo: "https://demo-revival-assembly.example.com",
-              image: null,
+              demo: "https://revival-assembly.vercel.app",
+              image: "/portfolio/web-development/revival-assembly.png",
             },
           ].map((demo, idx) => (
             <div
