@@ -65,6 +65,11 @@ export default function Portfolio() {
       url: "https://grace-point-church.vercel.app",
     },
     {
+      title: "Revival Assembly",
+      image: "/portfolio/web-development/revival-assembly.png",
+      url: "https://revival-assembly.vercel.app",
+    },
+    {
       title: "Fullstack Developer's Portfolio",
       image: "/portfolio/web-development/jeremiah-portfolio.png",
       url: "https://my-react-portfolio-virid.vercel.app/",
