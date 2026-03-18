@@ -37,9 +37,24 @@ export default function Academy() {
 
             <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-2 animate-smooth-slide delay-100">
               <h3 className="text-lg font-bold mb-3">Investment</h3>
-              <p className="text-3xl font-extrabold mb-4">₦80,000</p>
-              <p className="text-white/90 text-sm">
-                Payment options available for flexibility
+              <div className="space-y-3">
+                <div>
+                  <p className="text-white/70 line-through text-sm">₦160,000</p>
+                  <p className="text-3xl font-extrabold text-[#b35a00]">
+                    ₦80,000
+                  </p>
+                </div>
+                <div>
+                  <p className="text-white/70 line-through text-sm">€100</p>
+                  <p className="text-2xl font-extrabold text-[#b35a00]">€50</p>
+                </div>
+                <div>
+                  <p className="text-white/70 line-through text-sm">$110</p>
+                  <p className="text-2xl font-extrabold text-[#b35a00]">$55</p>
+                </div>
+              </div>
+              <p className="text-white/80 text-xs mt-4 bg-[#b35a00]/20 p-2 rounded">
+                ✓ 50% Discount valid till Saturday, March 28, 2026
               </p>
             </div>
           </div>
@@ -48,13 +63,17 @@ export default function Academy() {
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-1 animate-smooth-scale delay-75">
               <p className="font-semibold mb-2">Payment Option 1</p>
               <p className="text-white/90 text-sm">
-                Full upfront payment - ₦80,000
+                <span className="line-through">Full ₦160,000</span>{" "}
+                <span className="text-[#b35a00] font-bold">→ ₦80,000</span>
               </p>
             </div>
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-1 animate-smooth-scale delay-100">
               <p className="font-semibold mb-2">Payment Option 2</p>
               <p className="text-white/90 text-sm">
-                50% upfront (₦40,000), 50% during training (₦40,000)
+                <span className="line-through">₦80,000 + ₦80,000</span>{" "}
+                <span className="text-[#b35a00] font-bold">
+                  → ₦40,000 + ₦40,000
+                </span>
               </p>
             </div>
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-1 animate-smooth-scale delay-125">

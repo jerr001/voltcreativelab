@@ -84,7 +84,8 @@ export async function POST(request: NextRequest) {
           <li><strong>Training Format:</strong> ${trainingFormat}</li>
           ${paymentOption ? `<li><strong>Payment Plan:</strong> ${paymentOption}</li>` : ""}
           <li><strong>Course Duration:</strong> 3 Months</li>
-          <li><strong>Investment:</strong> ₦80,000</li>
+          <li><strong>Investment:</strong> <span style="text-decoration: line-through; color: #999;">₦160,000 / €100 / $110</span> <strong style="color: #b35a00;">₦80,000 / €50 / $55</strong></li>
+          <li><strong>Discount:</strong> 50% off till Saturday, March 28, 2026</li>
         </ul>
         
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">

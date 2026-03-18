@@ -12,7 +12,8 @@ export default function AcademyCarousel() {
       startDate: "April 13th, 2026",
       duration: "3 Months",
       cost: "₦80,000",
-      highlight: "Online & Physical Options Available",
+      originalCost: "₦160,000",
+      highlight: "50% Discount till March 28, 2026",
       description: "Intensive hands-on training with industry mentorship",
     },
     {
@@ -72,13 +73,16 @@ export default function AcademyCarousel() {
             <p className="text-white/90 mb-3">{slide.description}</p>
 
             {slide.duration && (
-              <div className="flex gap-4 mb-4 flex-wrap">
+              <div className="flex gap-4 mb-4 flex-wrap items-center">
                 <span className="bg-white/20 px-3 py-1 rounded-lg text-sm font-semibold">
                   {slide.duration}
                 </span>
-                <span className="bg-white/20 px-3 py-1 rounded-lg text-sm font-semibold">
-                  {slide.cost}
-                </span>
+                <div className="bg-white/20 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
+                  {slide.originalCost && (
+                    <span className="line-through text-white/70">{slide.originalCost}</span>
+                  )}
+                  <span className="text-yellow-300 font-bold">{slide.cost}</span>
+                </div>
               </div>
             )}
 
