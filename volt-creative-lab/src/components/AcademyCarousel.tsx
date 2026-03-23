@@ -79,9 +79,11 @@ export default function AcademyCarousel() {
                 </span>
                 <div className="bg-white/20 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
                   {slide.originalCost && (
-                    <span className="line-through text-white/70">{slide.originalCost}</span>
+                    <span className="line-through text-white/70">
+                      {slide.originalCost}
+                    </span>
                   )}
-                  <span className="text-yellow-300 font-bold">{slide.cost}</span>
+                  <span className="text-white font-bold">{slide.cost}</span>
                 </div>
               </div>
             )}

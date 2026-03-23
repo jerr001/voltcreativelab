@@ -40,17 +40,15 @@ export default function Academy() {
               <div className="space-y-3">
                 <div>
                   <p className="text-white/70 line-through text-sm">₦160,000</p>
-                  <p className="text-3xl font-extrabold text-[#b35a00]">
-                    ₦80,000
-                  </p>
+                  <p className="text-3xl font-extrabold text-white">₦80,000</p>
                 </div>
                 <div>
                   <p className="text-white/70 line-through text-sm">€100</p>
-                  <p className="text-2xl font-extrabold text-[#b35a00]">€50</p>
+                  <p className="text-2xl font-extrabold text-white">€50</p>
                 </div>
                 <div>
                   <p className="text-white/70 line-through text-sm">$110</p>
-                  <p className="text-2xl font-extrabold text-[#b35a00]">$55</p>
+                  <p className="text-2xl font-extrabold text-white">$55</p>
                 </div>
               </div>
               <p className="text-white/80 text-xs mt-4 bg-[#b35a00]/20 p-2 rounded">
@@ -64,14 +62,14 @@ export default function Academy() {
               <p className="font-semibold mb-2">Payment Option 1</p>
               <p className="text-white/90 text-sm">
                 <span className="line-through">Full ₦160,000</span>{" "}
-                <span className="text-[#b35a00] font-bold">→ ₦80,000</span>
+                <span className="text-white font-bold">→ ₦80,000</span>
               </p>
             </div>
             <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg hover:-translate-y-1 animate-smooth-scale delay-100">
               <p className="font-semibold mb-2">Payment Option 2</p>
               <p className="text-white/90 text-sm">
                 <span className="line-through">₦80,000 + ₦80,000</span>{" "}
-                <span className="text-[#b35a00] font-bold">
+                <span className="text-white font-bold">
                   → ₦40,000 + ₦40,000
                 </span>
               </p>
