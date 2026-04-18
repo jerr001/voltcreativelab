@@ -161,14 +161,12 @@ export default function AcademyForm() {
           className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
         >
           <option value="">Select a payment option</option>
-          <option value="full">
-            Full Payment - ₦80,000 (50% off till March 28)
-          </option>
+          <option value="full">Full Payment - ₦80,000 (Upfront)</option>
           <option value="installment">
-            Installment - ₦40,000 + ₦40,000 (50% off till March 28)
+            Installment - ₦40,000 + ₦40,000 (During Training)
           </option>
-          <option value="eur">EUR - €50 (50% off till March 28)</option>
-          <option value="usd">USD - $55 (50% off till March 28)</option>
+          <option value="eur">EUR - €50</option>
+          <option value="usd">USD - $55</option>
         </select>
       </div>
 

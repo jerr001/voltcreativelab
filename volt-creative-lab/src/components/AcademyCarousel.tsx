@@ -9,11 +9,11 @@ export default function AcademyCarousel() {
   const slides = [
     {
       title: "Web Development Training Bootcamp",
-      startDate: "April 13th, 2026",
+      startDate: "May 2, 2026",
       duration: "3 Months",
       cost: "₦80,000",
       originalCost: "₦160,000",
-      highlight: "50% Discount till March 28, 2026",
+      highlight: "Online & Physical Options Available",
       description: "Intensive hands-on training with industry mentorship",
     },
     {

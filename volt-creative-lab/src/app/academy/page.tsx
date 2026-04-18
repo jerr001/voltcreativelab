@@ -21,7 +21,7 @@ export default function Academy() {
             Web Development Training Bootcamp
           </h2>
           <p className="text-xl font-semibold mb-6 text-white/95">
-            Next Cohort Begins Monday, April 13th, 2026
+            Next Cohort Begins Monday, May 2, 2026
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -52,7 +52,7 @@ export default function Academy() {
                 </div>
               </div>
               <p className="text-white/80 text-xs mt-4 bg-[#b35a00]/20 p-2 rounded">
-                ✓ 50% Discount valid till Saturday, March 28, 2026
+                ✓ Payment options available for flexibility
               </p>
             </div>
           </div>

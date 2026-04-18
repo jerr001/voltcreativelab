@@ -75,7 +75,7 @@ export async function POST(request: NextRequest) {
       <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #b35a00;">Welcome to Volt Academy Bootcamp!</h2>
         <p>Hi ${name},</p>
-        <p>Thank you for registering for our Web Development Bootcamp starting <strong>April 13th, 2026</strong>.</p>
+        <p>Thank you for registering for our Web Development Bootcamp starting <strong>May 2, 2026</strong>.</p>
         
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
         
@@ -85,7 +85,6 @@ export async function POST(request: NextRequest) {
           ${paymentOption ? `<li><strong>Payment Plan:</strong> ${paymentOption}</li>` : ""}
           <li><strong>Course Duration:</strong> 3 Months</li>
           <li><strong>Investment:</strong> <span style="text-decoration: line-through; color: #999;">₦160,000 / €100 / $110</span> <strong style="color: #b35a00;">₦80,000 / €50 / $55</strong></li>
-          <li><strong>Discount:</strong> 50% off till Saturday, March 28, 2026</li>
         </ul>
         
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
