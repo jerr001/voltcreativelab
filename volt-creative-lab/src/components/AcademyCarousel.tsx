@@ -9,7 +9,7 @@ export default function AcademyCarousel() {
   const slides = [
     {
       title: "Web Development Training Bootcamp",
-      startDate: "May 2, 2026",
+      startDate: "1 June 2026",
       duration: "3 Months",
       cost: "₦80,000",
       originalCost: "₦160,000",

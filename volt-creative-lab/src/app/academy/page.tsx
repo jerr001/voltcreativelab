@@ -21,7 +21,7 @@ export default function Academy() {
             Web Development Training Bootcamp
           </h2>
           <p className="text-xl font-semibold mb-6 text-white/95">
-            Next Cohort Begins Monday, May 2, 2026
+            Next Cohort Begins Monday, 1 June 2026
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import AcademyCarousel from "@/components/AcademyCarousel";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export default function Home() {
   return (
@@ -364,6 +365,17 @@ export default function Home() {
             </div>
           </Link>
         </div>
+      </section>
+
+      {/* TESTIMONIALS SECTION */}
+      <section id="testimonials" className="max-w-6xl mx-auto py-20 px-4">
+        <h2 className="text-4xl font-extrabold mb-8 text-white text-center">
+          What Our Clients Say
+        </h2>
+        <p className="text-lg text-white/90 mb-12 text-center">
+          Hear from churches, businesses, and creators who've worked with us.
+        </p>
+        <TestimonialsCarousel />
       </section>
 
       {/* ACADEMY SECTION */}
