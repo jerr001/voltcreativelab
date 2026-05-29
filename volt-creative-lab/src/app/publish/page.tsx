@@ -2,10 +2,10 @@ export default function Publish() {
   return (
     <main>
       <section className="max-w-4xl mx-auto py-20 px-4">
-        <h1 className="text-4xl font-extrabold mb-8 text-white">
+        <h1 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">
           Volt Publish
         </h1>
-        <p className="text-lg text-white/90 mb-6">
+        <p className="text-lg text-[var(--hero-copy)] mb-6">
           Helping authors edit, publish, and promote their books, including
           building custom author websites and digital support for launches.
         </p>
@@ -24,7 +24,7 @@ export default function Publish() {
           <h2 className="text-2xl font-bold mb-4 text-[#a259ff]">
             Get Started
           </h2>
-          <p className="text-white/90 mb-4">
+          <p className="text-[var(--hero-copy)] mb-4">
             Ready to publish your book or need help with your author platform?{" "}
             <a href="/contact" className="text-[#a259ff] underline">
               Contact us

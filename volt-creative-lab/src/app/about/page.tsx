@@ -3,7 +3,7 @@ export default function About() {
     <main>
       {/* Hero Section */}
       <section className="max-w-5xl mx-auto py-16 px-4">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-white text-center animate-hero-fadein">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-[var(--hero-title)] text-center animate-hero-fadein">
           About Volt Creative Lab
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -89,7 +89,7 @@ export default function About() {
           </div>
         </div>
         <div className="flex flex-col items-center mt-8 animate-hero-fadein delay-300">
-          <span className="text-lg text-white/80 text-center">
+          <span className="text-lg text-[var(--hero-copy)] text-center">
             Ready to grow your brand or project?
           </span>
           <a

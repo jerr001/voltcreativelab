@@ -2,7 +2,7 @@ export default function Services() {
   return (
     <main>
       <section className="max-w-5xl mx-auto py-20 px-4">
-        <h1 className="text-4xl font-extrabold mb-8 text-white">
+        <h1 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">
           Our Services
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">

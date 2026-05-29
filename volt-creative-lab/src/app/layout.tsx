@@ -132,7 +132,7 @@ export default function RootLayout({
         <link rel="icon" href="/volt-logo.png" type="image/png" sizes="any" />
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/volt-logo.png" />
-        <meta name="theme-color" content="#b35a00" />
+        <meta name="theme-color" content="#b98f27" />
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -140,7 +140,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0814] text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}
       >
         <ClientNavbarWrapper />
         {children}

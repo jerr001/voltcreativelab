@@ -79,10 +79,10 @@ export default function Portfolio() {
   return (
     <main>
       <section className="max-w-6xl mx-auto py-20 px-4">
-        <h1 className="text-4xl font-extrabold mb-8 text-white">
+        <h1 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">
           Our Portfolio
         </h1>
-        <p className="text-lg text-white/90 mb-12">
+        <p className="text-lg text-[var(--hero-copy)] mb-12">
           A showcase of our creative work across web, graphic design, and
           publishing.
         </p>
@@ -154,7 +154,7 @@ export default function Portfolio() {
 
           {/* Flyers */}
           <div className="mb-12">
-            <h3 className="text-2xl font-semibold mb-6 text-white/90">
+            <h3 className="text-2xl font-semibold mb-6 text-[var(--foreground)]">
               Flyers
             </h3>
             <ImageLightbox images={flyers} alt="Flyer" />
@@ -162,7 +162,7 @@ export default function Portfolio() {
 
           {/* Logos */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-white/90">Logos</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-[var(--foreground)]">Logos</h3>
             <ImageLightbox images={logos} alt="Logo" />
           </div>
         </div>

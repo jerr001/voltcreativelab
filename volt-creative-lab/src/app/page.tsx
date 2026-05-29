@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import AcademyCarousel from "@/components/AcademyCarousel";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
@@ -31,18 +30,18 @@ export default function Home() {
             }}
           />
         </div>
-        <h1 className="relative z-10 text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-hero-fadein animate-float-text px-2 xs:px-0">
+        <h1 className="relative z-10 text-[var(--hero-title)] text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-hero-fadein animate-float-text px-2 xs:px-0">
           We help businesses, ministries, and authors grow through{" "}
-          <span className="text-white animate-scale-in">design</span>,{" "}
+          <span className="animate-scale-in">design</span>,{" "}
           <span
-            className="text-white animate-scale-in"
+            className="animate-scale-in"
             style={{ animationDelay: "0.2s" }}
           >
             web
           </span>
           , and{" "}
           <span
-            className="text-white animate-scale-in"
+            className="animate-scale-in"
             style={{ animationDelay: "0.4s" }}
           >
             publishing
@@ -50,7 +49,7 @@ export default function Home() {
           services.
         </h1>
         <p
-          className="relative z-10 text-base xs:text-lg md:text-xl text-white/80 max-w-xs xs:max-w-md sm:max-w-xl md:max-w-2xl mx-auto mb-8 animate-hero-fadein delay-150 animate-float-text px-2 xs:px-0"
+          className="relative z-10 text-[var(--hero-copy)] text-base xs:text-lg md:text-xl max-w-xs xs:max-w-md sm:max-w-xl md:max-w-2xl mx-auto mb-8 animate-hero-fadein delay-150 animate-float-text px-2 xs:px-0"
           style={{ animationDelay: "0.5s" }}
         >
           Volt Creative Lab is your partner for creative design, web
@@ -74,7 +73,7 @@ export default function Home() {
 
       {/* ABOUT SECTION */}
       <section id="about" className="max-w-5xl mx-auto py-16 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-white text-center animate-hero-fadein">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-[var(--hero-title)] text-center animate-hero-fadein">
           About Volt Creative Lab
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -160,7 +159,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center mt-8 animate-hero-fadein delay-300">
-          <span className="text-lg text-white/80 text-center">
+          <span className="text-lg text-[var(--hero-copy)] text-center">
             Ready to grow your brand or project?
           </span>
           <a
@@ -174,7 +173,7 @@ export default function Home() {
 
       {/* SERVICES SECTION */}
       <section id="services" className="max-w-5xl mx-auto py-20 px-4">
-        <h2 className="text-4xl font-extrabold mb-8 text-white">
+        <h2 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">
           Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -256,7 +255,7 @@ export default function Home() {
 
       {/* SUB-BRANDS SECTION */}
       <section id="solutions" className="max-w-4xl mx-auto py-20 px-4">
-        <h2 className="text-4xl font-extrabold mb-8 text-white">
+        <h2 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">
           Our Sub-Brands
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -292,10 +291,10 @@ export default function Home() {
 
       {/* PORTFOLIO SECTION */}
       <section id="portfolio" className="max-w-5xl mx-auto py-20 px-4">
-        <h2 className="text-4xl font-extrabold mb-8 text-white">
+        <h2 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">
           Our Portfolio
         </h2>
-        <p className="text-lg text-white/90 mb-10">
+        <p className="text-lg text-[var(--hero-copy)] mb-10">
           A showcase of some of our recent projects and success stories.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -349,7 +348,7 @@ export default function Home() {
                 Web Development Training
               </h3>
               <p className="text-white/90">
-                Mentored aspiring developers through Volt Academy's hands-on
+                Mentored aspiring developers through Volt Academy&apos;s hands-on
                 programs.
               </p>
             </div>
@@ -369,21 +368,21 @@ export default function Home() {
 
       {/* TESTIMONIALS SECTION */}
       <section id="testimonials" className="max-w-6xl mx-auto py-20 px-4">
-        <h2 className="text-4xl font-extrabold mb-8 text-white text-center">
+        <h2 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)] text-center">
           What Our Clients Say
         </h2>
-        <p className="text-lg text-white/90 mb-12 text-center">
-          Hear from churches, businesses, and creators who've worked with us.
+        <p className="text-lg text-[var(--hero-copy)] mb-12 text-center">
+          Hear from churches, businesses, and creators who&apos;ve worked with us.
         </p>
         <TestimonialsCarousel />
       </section>
 
       {/* ACADEMY SECTION */}
       <section id="academy" className="max-w-4xl mx-auto py-20 px-4">
-        <h2 className="text-4xl font-extrabold mb-8 text-white">
+        <h2 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">
           Volt Academy
         </h2>
-        <p className="text-lg text-white/90 mb-6">
+        <p className="text-lg text-[var(--hero-copy)] mb-6">
           Empowering the next generation of tech talent through hands-on
           learning, mentorship, and real-world projects.
         </p>
@@ -412,10 +411,10 @@ export default function Home() {
 
       {/* PUBLISH SECTION */}
       <section id="publish" className="max-w-4xl mx-auto py-20 px-4">
-        <h2 className="text-4xl font-extrabold mb-8 text-white">
+        <h2 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">
           Volt Publish
         </h2>
-        <p className="text-lg text-white/90 mb-6">
+        <p className="text-lg text-[var(--hero-copy)] mb-6">
           Helping authors edit, publish, and promote their books, including
           building custom author websites and digital support for launches.
         </p>
@@ -446,8 +445,8 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
       <section id="contact" className="max-w-2xl mx-auto py-20 px-4">
-        <h2 className="text-4xl font-extrabold mb-8 text-white">Get a Quote</h2>
-        <p className="text-lg text-white/90 mb-6">
+        <h2 className="text-4xl font-extrabold mb-8 text-[var(--hero-title)]">Get a Quote</h2>
+        <p className="text-lg text-[var(--hero-copy)] mb-6">
           Ready to start your project or need more information? Fill out the
           form below and our team will get back to you soon.
         </p>

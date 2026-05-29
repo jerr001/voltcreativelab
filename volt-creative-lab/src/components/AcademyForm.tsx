@@ -80,7 +80,7 @@ export default function AcademyForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-[#232046] rounded-2xl shadow-lg p-8 space-y-6"
+      className="bg-[var(--surface-strong)] rounded-2xl shadow-lg p-8 space-y-6"
     >
       {/* Success/Error Messages */}
       {submitStatus === "success" && (
@@ -96,8 +96,8 @@ export default function AcademyForm() {
 
       {/* Full Name */}
       <div>
-        <label className="block text-white font-semibold mb-3">
-          Full Name <span className="text-[#b35a00]">*</span>
+        <label className="block text-[var(--foreground)] font-semibold mb-3">
+          Full Name <span className="text-[var(--gold)]">*</span>
         </label>
         <input
           type="text"
@@ -106,7 +106,7 @@ export default function AcademyForm() {
           onChange={handleInputChange}
           required
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[var(--surface)] border border-[var(--gold)]/30 text-[var(--foreground)] placeholder-[var(--muted)]/70 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
           placeholder="Your full name"
         />
       </div>
@@ -114,7 +114,7 @@ export default function AcademyForm() {
       {/* Email */}
       <div>
         <label className="block text-white font-semibold mb-3">
-          Email <span className="text-[#b35a00]">*</span>
+          Email <span className="text-[var(--gold)]">*</span>
         </label>
         <input
           type="email"
@@ -123,7 +123,7 @@ export default function AcademyForm() {
           onChange={handleInputChange}
           required
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[var(--gold)]/30 text-white placeholder-white/50 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
           placeholder="your@email.com"
         />
       </div>
@@ -131,7 +131,7 @@ export default function AcademyForm() {
       {/* Phone */}
       <div>
         <label className="block text-white font-semibold mb-3">
-          Phone Number <span className="text-[#b35a00]">*</span>
+          Phone Number <span className="text-[var(--gold)]">*</span>
         </label>
         <input
           type="tel"
@@ -140,10 +140,10 @@ export default function AcademyForm() {
           onChange={handleInputChange}
           required
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[var(--gold)]/30 text-white placeholder-white/50 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
           placeholder="+1 (555) 123-4567 or +234 8XX XXX XXXX"
         />
-        <p className="text-white/60 text-xs mt-1">
+        <p className="text-[var(--muted)] text-xs mt-1">
           International format: include country code (e.g., +1, +44, +234)
         </p>
       </div>
@@ -158,7 +158,7 @@ export default function AcademyForm() {
           value={formData.paymentOption}
           onChange={handleInputChange}
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[var(--gold)]/30 text-white focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
         >
           <option value="">Select a payment option</option>
           <option value="full">Full Payment - ₦80,000 (Upfront)</option>
@@ -173,7 +173,7 @@ export default function AcademyForm() {
       {/* Training Format */}
       <div>
         <label className="block text-white font-semibold mb-3">
-          Training Format <span className="text-[#b35a00]">*</span>
+          Training Format <span className="text-[var(--gold)]">*</span>
         </label>
         <select
           name="trainingFormat"
@@ -181,7 +181,7 @@ export default function AcademyForm() {
           onChange={handleInputChange}
           required
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[var(--gold)]/30 text-white focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
         >
           <option value="">Select training format</option>
           <option value="online">Online</option>
@@ -191,9 +191,9 @@ export default function AcademyForm() {
 
       {/* Referral Code */}
       <div>
-        <label className="block text-white font-semibold mb-3">
+        <label className="block text-[var(--foreground)] font-semibold mb-3">
           Referral Code{" "}
-          <span className="text-white/60 font-normal">(optional)</span>
+          <span className="text-[var(--muted)] font-normal">(optional)</span>
         </label>
         <input
           type="text"
@@ -201,17 +201,17 @@ export default function AcademyForm() {
           value={formData.referralCode}
           onChange={handleInputChange}
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[var(--surface)] border border-[var(--gold)]/30 text-[var(--foreground)] placeholder-[var(--muted)]/70 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
           placeholder="Enter referral code"
         />
-        <p className="text-white/60 text-xs mt-1">
+        <p className="text-[var(--muted)] text-xs mt-1">
           Enter your sales rep&apos;s referral code if you were referred by them
         </p>
       </div>
 
       {/* Message */}
       <div>
-        <label className="block text-white font-semibold mb-3">
+        <label className="block text-[var(--foreground)] font-semibold mb-3">
           Additional Information
         </label>
         <textarea
@@ -220,7 +220,7 @@ export default function AcademyForm() {
           onChange={handleInputChange}
           rows={5}
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[#b35a00]/30 text-white placeholder-white/50 focus:outline-none focus:border-[#b35a00] focus:ring-2 focus:ring-[#b35a00]/20 transition-all resize-none disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[var(--surface)] border border-[var(--gold)]/30 text-[var(--foreground)] placeholder-[var(--muted)]/70 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all resize-none disabled:opacity-50"
           placeholder="Tell us about your web development experience and what you hope to achieve..."
         />
       </div>
@@ -229,12 +229,12 @@ export default function AcademyForm() {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-gradient-to-r from-[#b35a00] to-[#a259ff] text-white font-bold py-3 rounded-lg hover:shadow-lg hover:scale-105 hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-[var(--gold)] text-[var(--surface-strong)] font-bold py-3 rounded-lg hover:bg-[var(--accent)] hover:shadow-lg hover:scale-105 hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isLoading ? "Submitting..." : "Register for Bootcamp"}
       </button>
 
-      <p className="text-white/60 text-xs text-center">
+      <p className="text-[var(--muted)] text-xs text-center">
         By registering, you agree to our terms and conditions
       </p>
     </form>

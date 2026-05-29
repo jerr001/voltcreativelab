@@ -101,7 +101,7 @@ export default function ContactForm() {
 
       <form
         onSubmit={handleSubmit}
-        className="bg-[#232046] rounded-lg shadow p-6 flex flex-col gap-4"
+        className="bg-[var(--surface-strong)] rounded-lg shadow p-6 flex flex-col gap-4"
       >
         <div className="flex flex-col gap-1">
           <label
@@ -112,7 +112,7 @@ export default function ContactForm() {
           </label>
           <input
             id="name"
-            className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition"
+            className="border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)] rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition placeholder-[var(--muted)]/70"
             type="text"
             placeholder="Your Name"
             value={formData.name}
@@ -130,7 +130,7 @@ export default function ContactForm() {
           </label>
           <input
             id="email"
-            className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition"
+            className="border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)] rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition placeholder-[var(--muted)]/70"
             type="email"
             placeholder="Your Email"
             value={formData.email}
@@ -148,7 +148,7 @@ export default function ContactForm() {
           </label>
           <input
             id="phone"
-            className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition"
+            className="border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)] rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition placeholder-[var(--muted)]/70"
             type="text"
             placeholder="Phone (optional)"
             value={formData.phone}
@@ -183,7 +183,7 @@ export default function ContactForm() {
           </label>
           <textarea
             id="message"
-            className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition"
+            className="border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)] rounded px-4 py-2 focus:outline-none focus:border-[#a259ff] transition placeholder-[var(--muted)]/70"
             placeholder="Tell us about your project or request..."
             rows={5}
             value={formData.message}

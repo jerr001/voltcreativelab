@@ -9,7 +9,7 @@ export default function AcademyCarousel() {
   const slides = [
     {
       title: "Web Development Training Bootcamp",
-      startDate: "1 June 2026",
+      startDate: "Monday, 13th of July 2026",
       duration: "3 Months",
       cost: "₦80,000",
       originalCost: "₦160,000",
@@ -50,13 +50,13 @@ export default function AcademyCarousel() {
   };
 
   return (
-    <div className="relative w-full mb-12 bg-gradient-to-r from-[#b35a00] to-[#a259ff] rounded-2xl overflow-hidden shadow-lg">
+    <div className="relative w-full mb-12 bg-[var(--surface-strong)] rounded-2xl overflow-hidden shadow-lg">
       {/* Carousel Container */}
       <div className="relative min-h-96 md:h-80 overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 p-6 sm:p-8 md:p-12 flex flex-col justify-center text-white transition-opacity duration-500 pointer-events-none ${
+            className={`absolute inset-0 p-6 sm:p-8 md:p-12 flex flex-col justify-center text-[var(--foreground)] transition-opacity duration-500 pointer-events-none ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -65,36 +65,36 @@ export default function AcademyCarousel() {
             </h3>
 
             {slide.startDate && (
-              <p className="text-base sm:text-lg md:text-xl font-semibold text-white/95 mb-3">
+              <p className="text-base sm:text-lg md:text-xl font-semibold text-[var(--foreground)]/95 mb-3">
                 Starts Monday, {slide.startDate}
               </p>
             )}
 
-            <p className="text-white/90 mb-3">{slide.description}</p>
+            <p className="text-[var(--foreground)]/90 mb-3">{slide.description}</p>
 
             {slide.duration && (
               <div className="flex gap-4 mb-4 flex-wrap items-center">
-                <span className="bg-white/20 px-3 py-1 rounded-lg text-sm font-semibold">
+                <span className="bg-[var(--surface)]/80 px-3 py-1 rounded-lg text-sm font-semibold">
                   {slide.duration}
                 </span>
-                <div className="bg-white/20 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
+                <div className="bg-[var(--surface)]/80 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
                   {slide.originalCost && (
-                    <span className="line-through text-white/70">
+                    <span className="line-through text-[var(--muted)]">
                       {slide.originalCost}
                     </span>
                   )}
-                  <span className="text-white font-bold">{slide.cost}</span>
+                  <span className="text-[var(--foreground)] font-bold">{slide.cost}</span>
                 </div>
               </div>
             )}
 
-            <p className="text-white/95 font-semibold mb-4">
+            <p className="text-[var(--foreground)]/95 font-semibold mb-4">
               ✓ {slide.highlight}
             </p>
 
             <Link
               href="/academy"
-              className="inline-block w-fit bg-white text-[#b35a00] font-bold py-2 px-6 rounded-lg hover:bg-white/90 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 pointer-events-auto"
+              className="inline-block w-fit bg-[var(--gold)] text-[var(--surface-strong)] font-bold py-2 px-6 rounded-lg hover:bg-[var(--accent)] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 pointer-events-auto"
             >
               Register Now
             </Link>
@@ -105,14 +105,14 @@ export default function AcademyCarousel() {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-110 z-10"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[var(--surface)] hover:bg-[var(--surface-muted)] text-[var(--foreground)] p-2 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-110 z-10"
         aria-label="Previous slide"
       >
         ‹
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-110 z-10"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[var(--surface)] hover:bg-[var(--surface-muted)] text-[var(--foreground)] p-2 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-110 z-10"
         aria-label="Next slide"
       >
         ›
@@ -126,8 +126,8 @@ export default function AcademyCarousel() {
             onClick={() => goToSlide(index)}
             className={`h-2 rounded-full transition-all duration-300 hover:scale-125 ${
               index === currentSlide
-                ? "bg-white w-6"
-                : "bg-white/50 w-2 hover:bg-white/70"
+                ? "bg-[var(--foreground)] w-6"
+                : "bg-[var(--foreground)]/50 w-2 hover:bg-[var(--foreground)]/70"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

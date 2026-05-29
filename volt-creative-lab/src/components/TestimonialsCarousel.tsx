@@ -55,14 +55,14 @@ export default function TestimonialsCarousel() {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-64">
-        <div className="text-white">Loading testimonials...</div>
+        <div className="text-[var(--dark-blue)]">Loading testimonials...</div>
       </div>
     );
   }
 
   if (testimonials.length === 0) {
     return (
-      <div className="text-center text-white/70">
+      <div className="text-center text-[var(--dark-blue)] opacity-70">
         No testimonials available at the moment.
       </div>
     );
@@ -75,7 +75,7 @@ export default function TestimonialsCarousel() {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className={`absolute inset-0 p-6 sm:p-8 md:p-12 flex flex-col justify-center text-white transition-opacity duration-500 ${
+            className={`absolute inset-0 p-6 sm:p-8 md:p-12 flex flex-col justify-center text-[var(--foreground)] transition-opacity duration-500 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -86,7 +86,7 @@ export default function TestimonialsCarousel() {
               <cite className="font-bold text-[#a259ff] text-base sm:text-lg">
                 {testimonial.name}
               </cite>
-              <span className="text-white/70 text-sm sm:text-base">
+              <span className="text-[var(--muted)] text-sm sm:text-base">
                 {testimonial.role}
               </span>
             </div>
@@ -113,7 +113,7 @@ export default function TestimonialsCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-[var(--foreground)] p-2 rounded-full transition-all duration-300 hover:scale-110"
         aria-label="Previous testimonial"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +122,7 @@ export default function TestimonialsCarousel() {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition-all duration-300 hover:scale-110"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-[var(--foreground)] p-2 rounded-full transition-all duration-300 hover:scale-110"
         aria-label="Next testimonial"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

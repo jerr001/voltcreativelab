@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
     // Email HTML template for admin
     const emailHTML = `
       <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #b35a00;">New Bootcamp Registration</h2>
+        <h2 style="color: #b98f27;">New Bootcamp Registration</h2>
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
         
         <p><strong>Name:</strong> ${name}</p>
@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
             ? `
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
         <p><strong>Additional Information:</strong></p>
-        <p style="background-color: #f5f5f5; padding: 15px; border-left: 4px solid #b35a00; white-space: pre-wrap;">${message}</p>
+        <p style="background-color: #f5f5f5; padding: 15px; border-left: 4px solid #b98f27; white-space: pre-wrap;">${message}</p>
         `
             : ""
         }
@@ -73,9 +73,9 @@ export async function POST(request: NextRequest) {
     // Send confirmation email to user
     const confirmationHTML = `
       <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #b35a00;">Welcome to Volt Academy Bootcamp!</h2>
+        <h2 style="color: #b98f27;">Welcome to Volt Academy Bootcamp!</h2>
         <p>Hi ${name},</p>
-        <p>Thank you for registering for our Web Development Bootcamp starting <strong>May 2, 2026</strong>.</p>
+        <p>Thank you for registering for our Web Development Bootcamp starting <strong>Monday, 13th of July 2026</strong>.</p>
         
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
         
@@ -84,7 +84,7 @@ export async function POST(request: NextRequest) {
           <li><strong>Training Format:</strong> ${trainingFormat}</li>
           ${paymentOption ? `<li><strong>Payment Plan:</strong> ${paymentOption}</li>` : ""}
           <li><strong>Course Duration:</strong> 3 Months</li>
-          <li><strong>Investment:</strong> <span style="text-decoration: line-through; color: #999;">₦160,000 / €100 / $110</span> <strong style="color: #b35a00;">₦80,000 / €50 / $55</strong></li>
+          <li><strong>Investment:</strong> <span style="text-decoration: line-through; color: #999;">₦160,000 / €100 / $110</span> <strong style="color: #b98f27;">₦80,000 / €50 / $55</strong></li>
         </ul>
         
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">

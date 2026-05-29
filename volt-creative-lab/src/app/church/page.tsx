@@ -25,7 +25,7 @@ const WHATSAPP_LINK =
 
 export default function ChurchPage() {
   return (
-    <main className="w-full bg-[#0d0818]">
+    <main className="w-full bg-[var(--background)]">
       {/* HERO SECTION */}
       <section className="relative flex flex-col items-center justify-center min-h-[80vh] text-center pt-20 pb-16 sm:pt-24 sm:pb-20 overflow-hidden px-4">
         {/* Subtle background */}
@@ -37,17 +37,17 @@ export default function ChurchPage() {
         </div>
 
         <div className="relative z-10 max-w-3xl">
-          <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6 text-white animate-hero-fadein">
+          <h1 className="text-[var(--hero-title)] text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6 animate-hero-fadein">
             Launch Your Church's Digital Presence in{" "}
             <span className="text-[#a259ff]">7 Days</span>
           </h1>
-          <p className="text-lg xs:text-xl sm:text-2xl text-white/80 mb-8 animate-hero-fadein delay-150">
+          <p className="text-[var(--hero-copy)] text-lg xs:text-xl sm:text-2xl mb-8 animate-hero-fadein delay-150">
             We help churches build a professional online presence with a modern
             website, sermon archive, visitor connection system, and online
             giving setup.
           </p>
 
-          <p className="text-base sm:text-lg text-white/70 mb-10 italic animate-hero-fadein delay-300">
+          <p className="text-[var(--hero-copy-muted)] text-base sm:text-lg mb-10 italic animate-hero-fadein delay-300">
             "Built with ministry understanding and a focus on excellence."
           </p>
 
@@ -63,7 +63,7 @@ export default function ChurchPage() {
             </a>
             <Link
               href="/church#demo"
-              className="px-8 py-4 bg-white/10 border border-white text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-center sm:text-base text-lg"
+              className="px-8 py-4 bg-[var(--surface)] border border-[var(--foreground)] text-[var(--foreground)] font-bold rounded-lg hover:bg-[var(--surface-muted)] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-center sm:text-base text-lg"
             >
               View Demo Websites
             </Link>
@@ -73,7 +73,7 @@ export default function ChurchPage() {
 
       {/* PROBLEM SECTION */}
       <section className="max-w-5xl mx-auto py-20 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-white text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-[var(--hero-title)] text-center">
           Many churches are doing powerful work, but their digital presence is
           weak.
         </h2>
@@ -137,10 +137,10 @@ export default function ChurchPage() {
 
       {/* SOLUTION SECTION */}
       <section className="max-w-5xl mx-auto py-20 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-white text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-[var(--hero-title)] text-center">
           What's Included
         </h2>
-        <p className="text-center text-white/70 mb-16 text-lg">
+        <p className="text-center text-[var(--hero-copy)] mb-16 text-lg">
           Everything structured to be simple, clear, and useful for real
           ministry work.
         </p>
@@ -196,7 +196,7 @@ export default function ChurchPage() {
 
       {/* DEMO WEBSITES SECTION */}
       <section id="demo" className="max-w-5xl mx-auto py-20 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-white text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-[var(--hero-title)] text-center">
           See Demo Church Websites
         </h2>
 
@@ -221,7 +221,7 @@ export default function ChurchPage() {
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               {demo.image && (
-                <div className="w-full h-48 bg-gradient-to-br from-[#2d2a4a] to-[#1a1530] flex items-center justify-center border-b border-white/10 overflow-hidden">
+                <div className="w-full h-48 bg-[var(--surface-strong)] flex items-center justify-center border-b border-white/10 overflow-hidden">
                   <Image
                     src={demo.image}
                     alt={demo.name}
@@ -232,7 +232,7 @@ export default function ChurchPage() {
                 </div>
               )}
               {!demo.image && (
-                <div className="w-full h-48 bg-gradient-to-br from-[#2d2a4a] to-[#1a1530] flex items-center justify-center border-b border-white/10">
+                <div className="w-full h-48 bg-[var(--surface-strong)] flex items-center justify-center border-b border-white/10">
                   <div className="text-center">
                     <p className="text-white/50 text-sm">Coming Soon</p>
                   </div>
@@ -259,7 +259,7 @@ export default function ChurchPage() {
 
       {/* WHY VOLT SECTION */}
       <section className="max-w-5xl mx-auto py-20 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-white text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-[var(--hero-title)] text-center">
           Why Churches Choose Volt Creative Lab
         </h2>
 
@@ -313,10 +313,10 @@ export default function ChurchPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white mb-2">
+                <h3 className="text-lg font-bold text-[var(--hero-title)] mb-2">
                   {item.title}
                 </h3>
-                <p className="text-white/70">{item.desc}</p>
+                <p className="text-[var(--hero-copy)]">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -325,7 +325,7 @@ export default function ChurchPage() {
 
       {/* PROCESS SECTION */}
       <section className="max-w-5xl mx-auto py-20 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-white text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-[var(--hero-title)] text-center">
           Simple 3-Step Process
         </h2>
 
@@ -390,10 +390,10 @@ export default function ChurchPage() {
       {/* FINAL CTA SECTION */}
       <section className="max-w-4xl mx-auto py-20 px-4">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[var(--hero-title)] mb-6">
             Ready to Strengthen Your Church's Digital Presence?
           </h2>
-          <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-[var(--hero-copy)] mb-10 max-w-2xl mx-auto">
             Let's help your ministry present itself excellently online and make
             it easier for people to connect.
           </p>
@@ -409,7 +409,7 @@ export default function ChurchPage() {
             </a>
             <Link
               href="/contact"
-              className="px-10 py-4 bg-white/10 border border-white text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-lg sm:text-base text-center"
+              className="px-10 py-4 bg-[var(--surface)] border border-[var(--foreground)] text-[var(--foreground)] font-bold rounded-lg hover:bg-[var(--surface-muted)] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-lg sm:text-base text-center"
             >
               Request a Demo
             </Link>

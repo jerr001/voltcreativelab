@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     // Email HTML template
     const emailHTML = `
       <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #a259ff;">New Contact Form Submission</h2>
+        <h2 style="color: #b98f27;">New Contact Form Submission</h2>
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
         
         <p><strong>Name:</strong> ${name}</p>
@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
         
         <p><strong>Message:</strong></p>
-        <p style="background-color: #f5f5f5; padding: 15px; border-left: 4px solid #a259ff; white-space: pre-wrap;">${message}</p>
+        <p style="background-color: #f5f5f5; padding: 15px; border-left: 4px solid #b98f27; white-space: pre-wrap;">${message}</p>
         
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
         <p style="font-size: 12px; color: #999;">This email was sent from your website's contact form. Reply directly to ${email} to respond.</p>
@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
     // Send confirmation email to user
     const confirmationHTML = `
       <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #a259ff;">Thank You for Contacting Volt Creative Lab!</h2>
+        <h2 style="color: #b98f27;">Thank You for Contacting Volt Creative Lab!</h2>
         <p>Hi ${name},</p>
         <p>We've received your message and will get back to you as soon as possible.</p>
         <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
