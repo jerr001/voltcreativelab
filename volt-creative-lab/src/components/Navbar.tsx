@@ -86,7 +86,16 @@ export const Navbar = ({ open, setOpen, pathname }: NavbarProps) => {
       </div>
 
       <button
-        className="lg:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none ml-2"
+        type="button"
+        onClick={toggleTheme}
+        className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] transition hover:bg-[var(--surface)] mr-2"
+        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+      >
+        {theme === "dark" ? "☀️" : "🌙"}
+      </button>
+
+      <button
+        className="lg:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
         aria-label="Toggle menu"
         onClick={() => setOpen((v) => !v)}
       >
@@ -132,13 +141,6 @@ export const Navbar = ({ open, setOpen, pathname }: NavbarProps) => {
               </Link>
             );
           })}
-          <button
-            type="button"
-            onClick={toggleTheme}
-            className="w-full rounded-lg border border-[var(--border)] bg-[var(--background)] py-3 text-left text-[var(--foreground)] transition hover:bg-[var(--surface)]"
-          >
-            {theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
-          </button>
         </div>
       </div>
     </nav>
