@@ -27,7 +27,7 @@ export default function ChurchPage() {
   return (
     <main className="w-full bg-[var(--background)]">
       {/* HERO SECTION */}
-      <section className="relative flex flex-col items-center justify-center min-h-[80vh] text-center pt-20 pb-16 sm:pt-24 sm:pb-20 overflow-hidden px-4">
+      <section className="relative flex flex-col items-center justify-center min-h-[80vh] text-center pt-16 pb-12 sm:pt-24 sm:pb-20 overflow-hidden px-4">
         {/* Subtle background */}
         <div className="absolute inset-0 pointer-events-none select-none opacity-30">
           <div
@@ -37,11 +37,11 @@ export default function ChurchPage() {
         </div>
 
         <div className="relative z-10 max-w-3xl">
-          <h1 className="text-[var(--hero-title)] text-4xl xs:text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6 animate-hero-fadein">
+          <h1 className="text-[var(--hero-title)] text-2xl sm:text-3xl md:text-5xl font-extrabold leading-snug md:leading-tight mb-3 sm:mb-6 animate-hero-fadein">
             Launch Your Church's Digital Presence in{" "}
             <span className="text-[#a259ff]">7 Days</span>
           </h1>
-          <p className="text-[var(--hero-copy)] text-lg xs:text-xl sm:text-2xl mb-8 animate-hero-fadein delay-150">
+          <p className="text-[var(--hero-copy)] text-xs sm:text-sm md:text-base lg:text-lg mb-4 sm:mb-8 leading-relaxed animate-hero-fadein delay-150">
             We help churches build a professional online presence with a modern
             website, sermon archive, visitor connection system, and online
             giving setup.

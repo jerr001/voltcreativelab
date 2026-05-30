@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       {/* HERO SECTION */}
-      <section className="relative flex flex-col items-center justify-center min-h-[70vh] text-center pt-20 pb-10 sm:pt-24 sm:pb-12 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center min-h-[70vh] text-center pt-16 pb-8 sm:pt-24 sm:pb-12 overflow-hidden">
         {/* Animated Blobs */}
         <div className="absolute inset-0 pointer-events-none select-none">
           <div
@@ -30,7 +30,7 @@ export default function Home() {
             }}
           />
         </div>
-        <h1 className="relative z-10 text-[var(--hero-title)] text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-hero-fadein animate-float-text px-2 xs:px-0">
+        <h1 className="relative z-10 text-[var(--hero-title)] text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold leading-snug md:leading-tight mb-2 sm:mb-4 animate-hero-fadein animate-float-text px-2 xs:px-0">
           We help businesses, ministries, and authors grow through{" "}
           <span className="animate-scale-in">design</span>,{" "}
           <span
@@ -49,7 +49,7 @@ export default function Home() {
           services.
         </h1>
         <p
-          className="relative z-10 text-[var(--hero-copy)] text-base xs:text-lg md:text-xl max-w-xs xs:max-w-md sm:max-w-xl md:max-w-2xl mx-auto mb-8 animate-hero-fadein delay-150 animate-float-text px-2 xs:px-0"
+          className="relative z-10 text-[var(--hero-copy)] text-xs sm:text-sm md:text-base lg:text-lg max-w-xs xs:max-w-md sm:max-w-xl md:max-w-2xl mx-auto mb-4 sm:mb-8 leading-relaxed animate-hero-fadein delay-150 animate-float-text px-2 xs:px-0"
           style={{ animationDelay: "0.5s" }}
         >
           Volt Creative Lab is your partner for creative design, web
