@@ -97,32 +97,32 @@ export default function Academy() {
         </div>
 
         {/* What We Offer */}
-        <div className="mb-16 bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
+        <div className="mb-16 bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
           <h2 className="text-2xl font-bold mb-4 text-[#a259ff]">
             What We Offer
           </h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <li className="flex items-start">
               <span className="text-[var(--gold)] font-bold mr-3">→</span>
-              <span className="text-white/90">
+              <span className="text-[var(--dark-blue)]/90">
                 Web Development Training (Frontend & Full-stack tracks)
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-[var(--gold)] font-bold mr-3">→</span>
-              <span className="text-white/90">
+              <span className="text-[var(--dark-blue)]/90">
                 Mentorship from experienced professionals
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-[var(--gold)] font-bold mr-3">→</span>
-              <span className="text-white/90">
+              <span className="text-[var(--dark-blue)]/90">
                 Practical, project-based learning
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-[var(--gold)] font-bold mr-3">→</span>
-              <span className="text-white/90">Career guidance and support</span>
+              <span className="text-[var(--dark-blue)]/90">Career guidance and support</span>
             </li>
           </ul>
         </div>

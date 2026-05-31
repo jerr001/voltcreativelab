@@ -57,7 +57,7 @@ export default function ChurchPage() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-[#a259ff] text-white font-bold rounded-lg hover:bg-[#8b47d9] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-center sm:text-base text-lg"
+              className="px-8 py-4 bg-[var(--accent)] text-[var(--surface)] font-bold rounded-lg hover:bg-[var(--accent-soft)] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-center sm:text-base text-lg"
             >
               Request a Demo on WhatsApp
             </a>
@@ -79,54 +79,54 @@ export default function ChurchPage() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide">
-            <h3 className="text-lg font-bold text-[#a259ff] mb-3">
+          <div className="bg-[var(--surface)] rounded-lg p-6 border border-[var(--foreground)]/15 hover:border-[var(--accent)]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide">
+            <h3 className="text-lg font-bold text-[var(--accent)] mb-3">
               Visitors Can't Find You Online
             </h3>
-            <p className="text-white/80">
+            <p className="text-[var(--foreground)]/80">
               People searching for your church on Google or social media don't
               find a professional, welcoming presence. You're missing
               opportunities to connect with your community.
             </p>
           </div>
 
-          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-75">
-            <h3 className="text-lg font-bold text-[#a259ff] mb-3">
+          <div className="bg-[var(--surface)] rounded-lg p-6 border border-[var(--foreground)]/15 hover:border-[var(--accent)]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-75">
+            <h3 className="text-lg font-bold text-[var(--accent)] mb-3">
               Sermons Are Hard to Access
             </h3>
-            <p className="text-white/80">
+            <p className="text-[var(--foreground)]/80">
               Members miss messages and visitors have no way to revisit sermons.
               Powerful content is lost after Sunday service.
             </p>
           </div>
 
-          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-150">
-            <h3 className="text-lg font-bold text-[#a259ff] mb-3">
+          <div className="bg-[var(--surface)] rounded-lg p-6 border border-[var(--foreground)]/15 hover:border-[var(--accent)]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-150">
+            <h3 className="text-lg font-bold text-[var(--accent)] mb-3">
               Events & Announcements Are Scattered
             </h3>
-            <p className="text-white/80">
+            <p className="text-[var(--foreground)]/80">
               Information lives on Facebook, WhatsApp, and bulletin boards.
               Members miss important updates, and newcomers don't know what's
               happening.
             </p>
           </div>
 
-          <div className="bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-200">
-            <h3 className="text-lg font-bold text-[#a259ff] mb-3">
+          <div className="bg-[var(--surface)] rounded-lg p-6 border border-[var(--foreground)]/15 hover:border-[var(--accent)]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-200">
+            <h3 className="text-lg font-bold text-[var(--accent)] mb-3">
               First-Time Visitors Have No Clear Path
             </h3>
-            <p className="text-white/80">
+            <p className="text-[var(--foreground)]/80">
               New people don't know how to stay connected after their first
               visit. You're losing potential members because the connection
               isn't easy.
             </p>
           </div>
 
-          <div className="md:col-span-2 bg-[#1a1530] rounded-lg p-6 border border-[#a259ff]/20 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-250">
-            <h3 className="text-lg font-bold text-[#a259ff] mb-3">
+          <div className="md:col-span-2 bg-[var(--surface)] rounded-lg p-6 border border-[var(--foreground)]/15 hover:border-[var(--accent)]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-slide delay-250">
+            <h3 className="text-lg font-bold text-[var(--accent)] mb-3">
               Your Online Presence Doesn't Reflect Your Ministry's Excellence
             </h3>
-            <p className="text-white/80">
+            <p className="text-[var(--foreground)]/80">
               You invest in wonderful teaching, worship, and community care—but
               your online presentation doesn't communicate that excellence.
               Visitors form first impressions from what they see online.
@@ -182,13 +182,13 @@ export default function ChurchPage() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-[#1a1530] rounded-lg p-6 border border-white/10 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-scale"
+              className="bg-[var(--surface)] rounded-lg p-6 border border-[var(--foreground)]/15 hover:border-[var(--accent)]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-2 hover:scale-105 animate-smooth-scale"
               style={{ animationDelay: `${idx * 50}ms` }}
             >
-              <h3 className="text-lg font-bold text-[#a259ff] mb-2">
+              <h3 className="text-lg font-bold text-[var(--accent)] mb-2">
                 {item.title}
               </h3>
-              <p className="text-white/80">{item.desc}</p>
+              <p className="text-[var(--foreground)]/80">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -217,11 +217,11 @@ export default function ChurchPage() {
           ].map((demo, idx) => (
             <div
               key={idx}
-              className="bg-[#1a1530] rounded-lg overflow-hidden border border-white/10 hover:border-[#a259ff]/50 transition-all duration-300 group hover:shadow-lg hover:-translate-y-3 hover:scale-105 animate-smooth-slide"
+              className="bg-[var(--surface)] rounded-lg overflow-hidden border border-[var(--foreground)]/10 hover:border-[var(--accent)]/50 transition-all duration-300 group hover:shadow-lg hover:-translate-y-3 hover:scale-105 animate-smooth-slide"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
               {demo.image && (
-                <div className="w-full h-48 bg-[var(--surface-strong)] flex items-center justify-center border-b border-white/10 overflow-hidden">
+                <div className="w-full h-48 bg-[var(--surface-strong)] flex items-center justify-center border-b border-[var(--foreground)]/10 overflow-hidden">
                   <Image
                     src={demo.image}
                     alt={demo.name}
@@ -232,22 +232,22 @@ export default function ChurchPage() {
                 </div>
               )}
               {!demo.image && (
-                <div className="w-full h-48 bg-[var(--surface-strong)] flex items-center justify-center border-b border-white/10">
+                <div className="w-full h-48 bg-[var(--surface-strong)] flex items-center justify-center border-b border-[var(--foreground)]/10">
                   <div className="text-center">
-                    <p className="text-white/50 text-sm">Coming Soon</p>
+                    <p className="text-[var(--foreground)]/50 text-sm">Coming Soon</p>
                   </div>
                 </div>
               )}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2">
+                <h3 className="text-xl font-bold text-[var(--hero-title)] mb-2">
                   {demo.name}
                 </h3>
-                <p className="text-white/70 mb-6">{demo.desc}</p>
+                <p className="text-[var(--foreground)]/70 mb-6">{demo.desc}</p>
                 <a
                   href={demo.demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-[#a259ff] text-white font-semibold rounded-lg hover:bg-[#8b47d9] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1"
+                  className="inline-block px-6 py-3 bg-[var(--accent)] text-[var(--surface)] font-semibold rounded-lg hover:bg-[var(--accent-soft)] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1"
                 >
                   View Website
                 </a>
@@ -352,16 +352,16 @@ export default function ChurchPage() {
           ].map((step, idx) => (
             <div key={idx} className="relative">
               <div
-                className="relative z-10 bg-[#1a1530] rounded-lg p-8 text-center border border-white/10 hover:border-[#a259ff]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-3 hover:scale-105 animate-smooth-slide"
+                className="relative z-10 bg-[var(--surface)] rounded-lg p-8 text-center border border-[var(--foreground)]/15 hover:border-[var(--accent)]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-3 hover:scale-105 animate-smooth-slide"
                 style={{ animationDelay: `${idx * 150}ms` }}
               >
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#a259ff] text-white font-bold text-2xl mx-auto mb-4 hover:shadow-lg hover:scale-110 transition-all duration-300">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[var(--accent)] text-[var(--surface)] font-bold text-2xl mx-auto mb-4 hover:shadow-lg hover:scale-110 transition-all duration-300">
                   {step.num}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">
+                <h3 className="text-xl font-bold text-[var(--hero-title)] mb-4">
                   {step.title}
                 </h3>
-                <p className="text-white/70">{step.desc}</p>
+                <p className="text-[var(--foreground)]/70">{step.desc}</p>
               </div>
             </div>
           ))}
@@ -370,17 +370,17 @@ export default function ChurchPage() {
 
       {/* OFFER SECTION */}
       <section className="max-w-4xl mx-auto py-20 px-4">
-        <div className="bg-[#1a1530] rounded-lg p-8 md:p-12 border border-[#a259ff]/30 hover:border-[#a259ff]/60 transition-all duration-300 hover:shadow-lg hover:-translate-y-3 animate-smooth-slide">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 text-center">
+          <div className="bg-[var(--surface)] rounded-lg p-8 md:p-12 border border-[var(--foreground)]/15 hover:border-[var(--accent)]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-3 animate-smooth-slide">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--hero-title)] mb-6 text-center">
             Currently Onboarding a Few Churches
           </h2>
-          <p className="text-lg text-white/80 text-center leading-relaxed">
+          <p className="text-lg text-[var(--foreground)]/80 text-center leading-relaxed">
             We take on a limited number of churches to ensure each one gets the
             personalized attention and quality it deserves. We're carefully
             scheduling onboarding to maintain the high standard of our work and
             give your church the support it needs for a successful launch.
           </p>
-          <p className="text-center text-white/60 mt-6 italic">
+          <p className="text-center text-[var(--foreground)]/60 mt-6 italic">
             Ready to strengthen your church's digital presence? Let's talk about
             what's right for your ministry.
           </p>
@@ -403,7 +403,7 @@ export default function ChurchPage() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-4 bg-[#a259ff] text-white font-bold rounded-lg hover:bg-[#8b47d9] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-lg sm:text-base text-center"
+              className="px-10 py-4 bg-[var(--accent)] text-[var(--surface)] font-bold rounded-lg hover:bg-[var(--accent-soft)] transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 text-lg sm:text-base text-center"
             >
               Chat on WhatsApp
             </a>

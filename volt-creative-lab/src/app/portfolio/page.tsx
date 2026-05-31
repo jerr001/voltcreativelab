@@ -96,7 +96,7 @@ export default function Portfolio() {
             {webProjects.map((project, index) => (
               <div
                 key={index}
-                className="bg-[#232046] rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein"
+                className="bg-[var(--surface)] rounded-2xl shadow-lg overflow-hidden transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein"
                 style={{
                   animationDelay: `${index * 100}ms`,
                 }}
@@ -114,7 +114,7 @@ export default function Portfolio() {
                     className="w-full h-full object-cover group-hover:opacity-80 transition-opacity"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity text-sm font-semibold">
+                    <span className="text-[var(--dark-blue)] opacity-0 group-hover:opacity-100 transition-opacity text-sm font-semibold">
                       View
                     </span>
                   </div>
@@ -136,7 +136,7 @@ export default function Portfolio() {
                     </a>
                   )}
                   {!project.url && (
-                    <span className="inline-block px-6 py-2 text-sm text-white/50 cursor-not-allowed">
+                    <span className="inline-block px-6 py-2 text-sm text-[var(--dark-blue)]/50 cursor-not-allowed">
                       Coming Soon
                     </span>
                   )}

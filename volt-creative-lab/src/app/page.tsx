@@ -78,7 +78,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Vision Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-[var(--dark-blue)] animate-hero-fadein transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
             <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
               Our Vision
             </h3>
@@ -89,7 +89,7 @@ export default function Home() {
             </p>
           </div>
           {/* Mission Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein delay-150 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-[var(--dark-blue)] animate-hero-fadein delay-150 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
             <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
               Our Mission
             </h3>
@@ -100,7 +100,7 @@ export default function Home() {
             </p>
           </div>
           {/* Values Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-white animate-hero-fadein delay-300 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center text-[var(--dark-blue)] animate-hero-fadein delay-300 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
             <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
               Core Values
             </h3>
@@ -125,7 +125,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* What We Do Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white animate-hero-fadein transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] animate-hero-fadein transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
             <h3 className="text-xl font-bold mb-4 text-[#a259ff]">
               What We Do
             </h3>
@@ -140,7 +140,7 @@ export default function Home() {
             </ul>
           </div>
           {/* Sub-Brands Card */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white animate-hero-fadein delay-150 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] animate-hero-fadein delay-150 transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3">
             <h3 className="text-xl font-bold mb-4 text-[#a259ff]">
               Our Sub-Brands
             </h3>
@@ -178,60 +178,60 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {/* Branding & Visual Identity */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Branding & Visual Identity
             </h3>
-            <p className="text-white/90">
+            <p className="text-[var(--dark-blue)]/90">
               Logo design, brand guidelines, and visual storytelling to help you
               stand out.
             </p>
           </div>
           {/* Graphic Design */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-150">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-150">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Graphic Design
             </h3>
-            <p className="text-white/90">
+            <p className="text-[var(--dark-blue)]/90">
               Flyers, posters, social media graphics, and more for your
               marketing needs.
             </p>
           </div>
           {/* Website Design & Development */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-200">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-200">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Website Design & Development
             </h3>
-            <p className="text-white/90">
+            <p className="text-[var(--dark-blue)]/90">
               Modern, responsive websites and web apps tailored to your goals.
             </p>
           </div>
           {/* Video Editing */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Video Editing
             </h3>
-            <p className="text-white/90">
+            <p className="text-[var(--dark-blue)]/90">
               Professional video content for marketing, education, and
               storytelling.
             </p>
           </div>
           {/* Social Media Management */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-400">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-400">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Social Media Management
             </h3>
-            <p className="text-white/90">
+            <p className="text-[var(--dark-blue)]/90">
               Grow your audience and engagement across all platforms with our
               expert management.
             </p>
           </div>
           {/* Tech Education (Volt Academy) */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-500">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-500">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Tech Education (Volt Academy)
             </h3>
-            <ul className="list-disc pl-6 text-white/90 mb-2">
+            <ul className="list-disc pl-6 text-[var(--dark-blue)]/90 mb-2">
               <li>Web Development Training</li>
               <li>Frontend & Full-stack learning tracks</li>
               <li>Mentorship and practical learning</li>
@@ -239,11 +239,11 @@ export default function Home() {
           </div>
           <div className="hidden xl:block"></div>
           {/* Publishing & Author Services (Volt Publish) */}
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-600">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] flex flex-col h-full min-h-[200px] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-600">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Publishing & Author Services (Volt Publish)
             </h3>
-            <ul className="list-disc pl-6 text-white/90 mb-2">
+            <ul className="list-disc pl-6 text-[var(--dark-blue)]/90 mb-2">
               <li>Book editing and formatting</li>
               <li>Publishing on Amazon and Selar</li>
               <li>Custom author websites</li>
@@ -259,29 +259,29 @@ export default function Home() {
           Our Sub-Brands
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Volt Studio
             </h3>
-            <p className="text-white/90">
+            <p className="text-[var(--dark-blue)]/90">
               Creative, branding, design, web development, and digital services
               for clients.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-150">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-150">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Volt Academy
             </h3>
-            <p className="text-white/90">
+            <p className="text-[var(--dark-blue)]/90">
               Training aspiring developers and tech talents through structured
               programs.
             </p>
           </div>
-          <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300">
+          <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300">
             <h3 className="text-2xl font-bold mb-2 text-[#a259ff]">
               Volt Publish
             </h3>
-            <p className="text-white/90">
+            <p className="text-[var(--dark-blue)]/90">
               Helping authors edit, publish, and promote their books, including
               building author websites.
             </p>
@@ -299,66 +299,66 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein cursor-pointer">
+            <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Brand Identity for Ministry
               </h3>
-              <p className="text-white/90">
+              <p className="text-[var(--dark-blue)]/90">
                 Developed a cohesive brand and digital presence for a growing
                 ministry.
               </p>
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-100 cursor-pointer">
+            <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-100 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 E-commerce Website
               </h3>
-              <p className="text-white/90">
+              <p className="text-[var(--dark-blue)]/90">
                 Launched a custom online store with seamless checkout and
                 analytics.
               </p>
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-200 cursor-pointer">
+            <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-200 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Author Book Launch
               </h3>
-              <p className="text-white/90">
+              <p className="text-[var(--dark-blue)]/90">
                 Guided an author from manuscript to published book and online
                 sales.
               </p>
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300 cursor-pointer">
+            <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-300 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Social Media Campaign
               </h3>
-              <p className="text-white/90">
+              <p className="text-[var(--dark-blue)]/90">
                 Increased engagement and reach for a business through creative
                 campaigns.
               </p>
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-400 cursor-pointer">
+            <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-400 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Web Development Training
               </h3>
-              <p className="text-white/90">
+              <p className="text-[var(--dark-blue)]/90">
                 Mentored aspiring developers through Volt Academy&apos;s hands-on
                 programs.
               </p>
             </div>
           </Link>
           <Link href="/portfolio">
-            <div className="bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-500 cursor-pointer">
+            <div className="bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl hover:-translate-y-3 animate-hero-fadein delay-500 cursor-pointer">
               <h3 className="text-xl font-bold mb-2 text-[#a259ff]">
                 Book Publishing Support
               </h3>
-              <p className="text-white/90">
+              <p className="text-[var(--dark-blue)]/90">
                 Helped authors edit, publish, and promote their books online.
               </p>
             </div>
@@ -386,11 +386,11 @@ export default function Home() {
           Empowering the next generation of tech talent through hands-on
           learning, mentorship, and real-world projects.
         </p>
-        <div className="mb-10 bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
+        <div className="mb-10 bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
           <h3 className="text-2xl font-bold mb-4 text-[#a259ff]">
             What We Offer
           </h3>
-          <ul className="list-disc pl-6 text-white/90 mb-4">
+          <ul className="list-disc pl-6 text-[var(--dark-blue)]/90 mb-4">
             <li>Web Development Training (Frontend & Full-stack tracks)</li>
             <li>Mentorship from experienced professionals</li>
             <li>Practical, project-based learning</li>
@@ -401,7 +401,7 @@ export default function Home() {
           <h3 className="text-2xl font-bold mb-4 text-[#a259ff]">
             How to Join
           </h3>
-          <p className="text-white/90 mb-4">
+          <p className="text-[var(--dark-blue)]/90 mb-4">
             Interested in joining Volt Academy? Contact us to learn about
             upcoming cohorts, programs, and how you can get started on your tech
             journey.
@@ -418,11 +418,11 @@ export default function Home() {
           Helping authors edit, publish, and promote their books, including
           building custom author websites and digital support for launches.
         </p>
-        <div className="mb-10 bg-[#232046] rounded-2xl shadow-lg p-8 text-white transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
+        <div className="mb-10 bg-[var(--surface)] rounded-2xl shadow-lg p-8 text-[var(--dark-blue)] transition-all duration-300 ease-out transform hover:scale-105 hover:shadow-2xl animate-hero-fadein">
           <h3 className="text-2xl font-bold mb-4 text-[#a259ff]">
             Our Publishing Services
           </h3>
-          <ul className="list-disc pl-6 text-white/90 mb-4">
+          <ul className="list-disc pl-6 text-[var(--dark-blue)]/90 mb-4">
             <li>Book editing and formatting</li>
             <li>Publishing on Amazon and Selar</li>
             <li>Custom author websites</li>
@@ -433,7 +433,7 @@ export default function Home() {
           <h3 className="text-2xl font-bold mb-4 text-[#a259ff]">
             Get Started
           </h3>
-          <p className="text-white/90 mb-4">
+          <p className="text-[var(--dark-blue)]/90 mb-4">
             Ready to publish your book or need help with your author platform?{" "}
             <a href="#contact" className="text-[#a259ff] underline">
               Contact us
@@ -450,7 +450,7 @@ export default function Home() {
           Ready to start your project or need more information? Fill out the
           form below and our team will get back to you soon.
         </p>
-        <form className="bg-[#232046] rounded-lg shadow p-6 flex flex-col gap-4">
+        <form className="bg-[var(--surface)] rounded-lg shadow p-6 flex flex-col gap-4">
           <div className="flex flex-col gap-1">
             <label
               htmlFor="name"
@@ -460,7 +460,7 @@ export default function Home() {
             </label>
             <input
               id="name"
-              className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2"
+              className="border border-[var(--border)] bg-[var(--surface-strong)] text-[var(--dark-blue)] rounded px-4 py-2"
               type="text"
               placeholder="Your Name"
               required
@@ -475,7 +475,7 @@ export default function Home() {
             </label>
             <input
               id="email"
-              className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2"
+              className="border border-[var(--border)] bg-[var(--surface-strong)] text-[var(--dark-blue)] rounded px-4 py-2"
               type="email"
               placeholder="Your Email"
               required
@@ -490,7 +490,7 @@ export default function Home() {
             </label>
             <input
               id="phone"
-              className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2"
+              className="border border-[var(--border)] bg-[var(--surface-strong)] text-[var(--dark-blue)] rounded px-4 py-2"
               type="text"
               placeholder="Phone (optional)"
             />
@@ -504,7 +504,7 @@ export default function Home() {
             </label>
             <textarea
               id="message"
-              className="border border-[#444] bg-[#18162a] text-white rounded px-4 py-2"
+              className="border border-[var(--border)] bg-[var(--surface-strong)] text-[var(--dark-blue)] rounded px-4 py-2"
               placeholder="Tell us about your project or request..."
               rows={5}
               required

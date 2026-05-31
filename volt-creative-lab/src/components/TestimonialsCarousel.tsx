@@ -71,7 +71,7 @@ export default function TestimonialsCarousel() {
   return (
     <div className="relative w-full">
       {/* Carousel Container */}
-      <div className="relative min-h-80 md:h-72 overflow-hidden bg-[#232046] rounded-2xl shadow-lg">
+      <div className="relative min-h-80 md:h-72 overflow-hidden bg-[var(--surface)] rounded-2xl shadow-lg">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
@@ -79,7 +79,7 @@ export default function TestimonialsCarousel() {
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
-            <blockquote className="text-lg sm:text-xl md:text-2xl italic mb-6 text-white/90">
+            <blockquote className="text-lg sm:text-xl md:text-2xl italic mb-6 text-[var(--dark-blue)]/90">
               "{testimonial.feedback}"
             </blockquote>
             <div className="flex flex-col">
@@ -102,8 +102,8 @@ export default function TestimonialsCarousel() {
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === currentSlide
-                ? "bg-[#a259ff] scale-125"
-                : "bg-white/30 hover:bg-white/50"
+                ? "bg-[var(--accent)] scale-125"
+                : "bg-[var(--foreground)]/30 hover:bg-[var(--foreground)]/50"
             }`}
             aria-label={`Go to testimonial ${index + 1}`}
           />
@@ -113,7 +113,7 @@ export default function TestimonialsCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-[var(--foreground)] p-2 rounded-full transition-all duration-300 hover:scale-110"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[var(--surface-strong)] hover:bg-[var(--surface-muted)] text-[var(--foreground)] p-2 rounded-full transition-all duration-300 hover:scale-110"
         aria-label="Previous testimonial"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +122,7 @@ export default function TestimonialsCarousel() {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 text-[var(--foreground)] p-2 rounded-full transition-all duration-300 hover:scale-110"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[var(--surface-strong)] hover:bg-[var(--surface-muted)] text-[var(--foreground)] p-2 rounded-full transition-all duration-300 hover:scale-110"
         aria-label="Next testimonial"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

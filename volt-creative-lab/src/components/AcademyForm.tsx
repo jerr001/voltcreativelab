@@ -113,7 +113,7 @@ export default function AcademyForm() {
 
       {/* Email */}
       <div>
-        <label className="block text-white font-semibold mb-3">
+        <label className="block text-[var(--foreground)] font-semibold mb-3">
           Email <span className="text-[var(--gold)]">*</span>
         </label>
         <input
@@ -123,14 +123,14 @@ export default function AcademyForm() {
           onChange={handleInputChange}
           required
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[var(--gold)]/30 text-white placeholder-white/50 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[var(--surface)] border border-[var(--gold)]/30 text-[var(--foreground)] placeholder-[var(--muted)]/70 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
           placeholder="your@email.com"
         />
       </div>
 
       {/* Phone */}
       <div>
-        <label className="block text-white font-semibold mb-3">
+        <label className="block text-[var(--foreground)] font-semibold mb-3">
           Phone Number <span className="text-[var(--gold)]">*</span>
         </label>
         <input
@@ -140,7 +140,7 @@ export default function AcademyForm() {
           onChange={handleInputChange}
           required
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[var(--gold)]/30 text-white placeholder-white/50 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[var(--surface)] border border-[var(--gold)]/30 text-[var(--foreground)] placeholder-[var(--muted)]/70 focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
           placeholder="+1 (555) 123-4567 or +234 8XX XXX XXXX"
         />
         <p className="text-[var(--muted)] text-xs mt-1">
@@ -150,7 +150,7 @@ export default function AcademyForm() {
 
       {/* Payment Option */}
       <div>
-        <label className="block text-white font-semibold mb-3">
+        <label className="block text-[var(--foreground)] font-semibold mb-3">
           Payment Option (Optional)
         </label>
         <select
@@ -158,7 +158,7 @@ export default function AcademyForm() {
           value={formData.paymentOption}
           onChange={handleInputChange}
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[var(--gold)]/30 text-white focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[var(--surface)] border border-[var(--gold)]/30 text-[var(--foreground)] focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
         >
           <option value="">Select a payment option</option>
           <option value="full">Full Payment - ₦80,000 (Upfront)</option>
@@ -172,7 +172,7 @@ export default function AcademyForm() {
 
       {/* Training Format */}
       <div>
-        <label className="block text-white font-semibold mb-3">
+        <label className="block text-[var(--foreground)] font-semibold mb-3">
           Training Format <span className="text-[var(--gold)]">*</span>
         </label>
         <select
@@ -181,7 +181,7 @@ export default function AcademyForm() {
           onChange={handleInputChange}
           required
           disabled={isLoading}
-          className="w-full px-4 py-3 rounded-lg bg-[#1a1530] border border-[var(--gold)]/30 text-white focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
+          className="w-full px-4 py-3 rounded-lg bg-[var(--surface)] border border-[var(--gold)]/30 text-[var(--foreground)] focus:outline-none focus:border-[var(--gold)] focus:ring-2 focus:ring-[var(--gold)]/20 transition-all disabled:opacity-50"
         >
           <option value="">Select training format</option>
           <option value="online">Online</option>
